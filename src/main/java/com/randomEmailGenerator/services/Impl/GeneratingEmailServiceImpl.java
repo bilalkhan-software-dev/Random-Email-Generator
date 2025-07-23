@@ -10,6 +10,7 @@ import static com.randomEmailGenerator.util.Names.INDIAN_GIRLS_NAMES;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -18,6 +19,10 @@ import java.util.Random;
 public class GeneratingEmailServiceImpl implements GeneratingEmailService {
 
     private final GeneratedEmailRepository generatedEmailRepository;
+
+
+    public static final String GMAIL_DOMAIN = "@gmail.com";
+
 
     private final Random random = new Random();
 
