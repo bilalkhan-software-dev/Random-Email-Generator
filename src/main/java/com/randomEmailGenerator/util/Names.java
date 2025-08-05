@@ -9,7 +9,7 @@ public class Names {
             "Ahmad", "Ali", "Abdullah", "Abdul", "Ahsan", "Arham", "Asad", "Ayan", "Bilal", "Danish",
             "Ehsan", "Fahad", "Farhan", "Hamza", "Haris", "Hassan", "Hussain", "Ibrahim", "Imran", "Irfan",
             "Junaid", "Kamran", "Kashif", "Majid", "Nadeem", "Nasir", "Omar", "Qasim", "Rashid",
-            "Saad", "Saeed", "Salman", "Shahid", "Tariq", "Usman", "Waqas", "Yasir", "Zain", "Zubair",
+            "Saad", "Saeed","Farhad","Salman", "Shahid", "Tariq", "Usman", "Waqas", "Yasir", "Zain", "Zubair",
             "Aamir", "Adnan", "Akbar", "Akram", "Altaf", "Ameer", "Amir", "Anwar", "Arsalan", "Asif",
             "Asim", "Atif", "Azhar", "Aziz", "Badar", "Basit", "Faisal", "Faizan", "Faraz", "Furqan",
             "Ghulam", "Haider", "Hamid", "Hammad", "Haseeb", "Hatim", "Iftikhar", "Ismail", "Jameel", "Javed",
@@ -42,7 +42,7 @@ public class Names {
             "Shakeel", "Shakil", "Shakir", "Shams", "Sharaf", "Sharif", "Shaukat", "Shayan", "Sheharyar", "Shehroz",
             "Shibli", "Shiraz", "Shuaib", "Siddiq", "Siraj", "Sohrab", "Sufi", "Suhail", "Sulaiman", "Sultan",
             "Suroor", "Taha", "Taimoor", "Talal", "Tamoor", "Taqi", "Tasleem", "Tauqeer", "Tayyab", "Tayyib",
-            "Tufail", "Ubayd", "Uthman", "Wahaj", "Wajahat", "Wajid", "Wali", "Waqar", "Wasif", "Wazir",
+            "Tufail", "Ubaid", "Uthman", "Wahaj", "Wajahat", "Wajid", "Wali", "Waqar", "Wasif", "Wazir",
             "Yahya", "Yamin", "Yaqoob", "Yasin", "Yousaf", "Yusha", "Zafar", "Zahoor", "Zaid", "Zaki",
             "Zaman", "Zameer", "Zarar", "Zawar", "Zayd", "Zia", "Zohaib", "Zuhair", "Zulqarnain", "Zunair",
             "Zuraiz", "Aaban", "Aabid", "Aadil", "Aafaq", "Aalam", "Aalee", "Aalim", "Aaqib", "Aarif",
@@ -58,8 +58,7 @@ public class Names {
             "Faaiz", "Faakhir", "Faateh", "Fadi", "Faheem", "Fahmi", "Fakhar", "Fakhr", "Falah", "Faras",
             "Fardeen", "Farid", "Faris", "Faruq", "Fateen", "Fawaz", "Fawzi", "Faysal", "Fazal", "Fida",
             "Firas", "Fuaad", "Ghaazi", "Ghani", "Ghaus", "Ghufran", "Haadi", "Haafiz", "Haamid", "Haani",
-            "Haarith", "Haashim", "Habeeb", "Hafs", "Haidar", "Haisam", "Hajjaj", "Hajjaj", "Hamdan", "Harman",
-            "Hasham", "Hashem", "Hashir", "Hasnain", "Hassam", "Hussam", "Hussayn", "Huzaifah", "Huzayfah", "Ibraheem",
+            "Haarith", "Haashim", "Habeeb", "Hafs","Hafsa", "Hassam", "Hussam", "Hussayn", "Huzaifah", "Huzayfah", "Ibraheem",
             "Ibtisam", "Idrees", "Idris", "Ifham", "Ifran", "Imaad", "Imam", "Imdad", "Imtiaz", "Inaam",
             "Inayat", "Intekhab", "Irtaza", "Irteza", "Irtiza", "Ishfaq", "Ishtiaq", "Islah", "Ismat", "Iyaad",
             "Izaan", "Izaat", "Izhar", "Jaad", "Jabir", "Jaffer", "Jahanzaib", "Jahangir", "Jalees", "Jamaal",
@@ -69,14 +68,14 @@ public class Names {
             "Makki", "Mamoon", "Manzoor", "Marwan", "Masroor", "Mawdood", "Mehran", "Miskeen", "Mufaddal", "Mufeed",
             "Muhsin", "Muntasir", "Muqaddas", "Murad", "Mursaleen", "Musab", "Musaddiq", "Mustafeez", "Mutahhar", "Mutasim",
             "Mutasir", "Muzammil", "Nabeel", "Nadhir", "Nafis", "Najm", "Naseem", "Naseer", "Navid", "Nihal",
-            "Nisar", "Nur", "Nuruddin", "Omair", "Osaid", "Othman", "Owais", "Qaabil", "Qaadir", "Qaaim",
+            "Nisar", "Nur", "Nuruddin", "Omair", "Osaid", "Othman", "Owais", "Qaabil", "Qadir", "Qaaim",
             "Qabeel", "Qadar", "Qasu", "Qudamah", "Quraish", "Qusay", "Raad", "Raafe", "Raahil", "Raamiz",
             "Raaid", "Raashid", "Rab", "Rabah", "Rabi", "Rabih", "Rafay", "Rafe", "Rafee", "Raghib",
-            "Rai", "Rajab", "Ramadan", "Rami", "Ramzan", "Rasheed", "Rasool", "Rauoof", "Razzaq", "Rehaan",
-            "Ridwan", "Rifaah", "Rohaan", "Rustam", "Saabir", "Saadiq", "Saahib", "Saajid", "Saalih", "Saalim",
-            "Saami", "Saamir", "Saba", "Sabah", "Sabeeh", "Sachal", "Sadaqat", "Sadeed", "Sadeeq", "Sadik",
-            "Sahban", "Saheel", "Sajawal", "Sakhi", "Salaar", "Sallam", "Samaad", "Saqr", "Sarim", "Sarmad",
-            "Sawal", "Sayf", "Sayyid", "Shaheed", "Shahriyar", "Shahzaib", "Shakoor", "Shan", "Shareef", "Shariq",
+            "Rai", "Rajab", "Ramadan", "Rami", "Ramzan","Rashid", "Rasheed", "Rauoof","Rauf", "Razzaq", "Rehaan",
+            "Ridwan", "Rifaah", "Rohaan", "Rustam", "Saabir", "Saadiq", "Saahib", "Sajid", "Saalih", "Saalim",
+            "Saami", "Saamir","Sameer", "Saba", "Sabah", "Sabeeh", "Sachal", "Sadaqat", "Sadeed", "Sadeeq", "Sadik",
+            "Sahban", "Saheel","Sahil", "Sajawal", "Sakhi", "Salaar", "Sallam", "Samaad", "Saqr", "Sarim", "Sarmad",
+            "Sawal", "Saif", "Sayyid", "Shaheed", "Shahriyar", "Shahzaib", "Shakoor", "Shan", "Shareef", "Shariq",
             "Shayaan", "Shujaat", "Shukri", "Zaaheer", "Zaahid", "Zaahir", "Zaaim", "Zafir", "Zakwan", "Zulfiqar","Sheikh","Butt","Jutt","Cheema","Chaudary","Rao","Sandhu"
     );
 
@@ -117,7 +116,7 @@ public class Names {
             "Haniya", "Hoor", "Hurriya", "Inaaya", "Inayat", "Ismat", "Jahan", "Jahanara", "Kainaat", "Kashf",
             "Komal", "Lata", "Madihah", "Maham", "Mahgul", "Mahin", "Mahpara", "Mahrukh", "Mahwish", "Maizah",
             "Malalai", "Maliha", "Mariam", "Marzia", "Mashooq", "Masira", "Masooma", "Meharban", "Meher", "Mehnaz",
-            "Mehr", "Mehrun", "Misha", "Mishal", "Momal", "Mushk", "Nabeeha", "Nabila", "Nageena", "Nahla",
+            "Mehr", "Mehrun", "Misha", "Mishal", "Komal", "Mushk", "Nabeeha", "Nabila", "Nageena", "Nahla",
             "Najia", "Najiba", "Najma", "Naseema", "Nashit", "Nashita", "Nasim", "Nasira", "Natasha", "Naveera",
             "Naveen", "Nayab", "Nayyab", "Naz", "Nazakat", "Nazeefa", "Nazia", "Nazish", "Nazli", "Neelam",
             "Neelofar", "Nigar", "Nilofer", "Nimrah", "Noor", "Noor", "Noorjahan", "Noreen", "Noshaba", "Nuzhat",
@@ -128,14 +127,14 @@ public class Names {
             "Sahira", "Saima", "Saira", "Sajida", "Sakina", "Saliha", "Salima", "Samar", "Sameera", "Samina",
             "Samra", "Sana", "Sanam", "Sania", "Saniya", "Sara", "Sarah", "Sarwat", "Sawera", "Seema",
             "Sehar", "Sehrish", "Shabana", "Shabnam", "Shagufta", "Shaheen", "Shahida", "Shahnaz", "Shaista", "Shakeela",
-            "Shamim", "Shamim", "Shamsha", "Shanza", "Shazia", "Sheeba", "Shehla", "Shehnaz", "Shehreen", "Shehrezad",
-            "Shehryar", "Shehzaadi", "Shehzadi", "Sherbano", "Sheri", "Sherin", "Sheza", "Shireen", "Shiza", "Shumaila",
+            "Shamim", "Shamim", "Shamsha", "Shanza", "Shazia", "Sheeba", "Shehla", "Shehnaz", "Shehreen",
+            "Shehryar", "Shehzadi", "Sherbano", "Sheri", "Sherin", "Sheza", "Shireen", "Shiza", "Shumaila",
             "Sidra", "Sobia", "Sonia", "Suboohi", "Sughra", "Suhana", "Suhra", "Sukaina", "Sukayna", "Sultana",
             "Sumaira", "Sumayya", "Sumbul", "Sundas", "Tabassum", "Tahira", "Tahira", "Tahreem", "Taj", "Talat",
             "Tamanna", "Tania", "Taqdees", "Taskeen", "Tasneem", "Tayyaba", "Tehmina", "Ujala", "Urooj", "Uzma",
             "Varda", "Wajeeha", "Warda", "Yasmeen", "Yumna", "Zahida", "Zahra", "Zainab", "Zara", "Zareen",
             "Zarmina", "Zartaj", "Zeenat", "Zoha", "Zohra", "Zonaira", "Zubaira", "Zulekha", "Zunaira"
-            ,"Sheikh","Butt","Jutt","Cheema","Chaudary","Rao","Sandhu"
+            ,"Sheikh","Butt","Jutt","Cheema","Chaudary","Rao","Sandhu","Randhawa"
     );
 
     public static List<String> INDIAN_BOYS_NAMES = Arrays.asList(
