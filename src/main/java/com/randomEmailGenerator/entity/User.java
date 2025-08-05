@@ -21,14 +21,15 @@ public class User {
 
     private String fullName;
 
-    @Column(unique = true,nullable = false)
+    @Column(unique = true, nullable = false)
     private String username;
 
     private String password;
+    private Boolean isEnabled = false;
 
     private LocalDateTime createdAt;
 
-    @OneToMany(mappedBy = "user",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<GeneratedEmail> generatedEmail = new ArrayList<>();
 
 }

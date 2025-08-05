@@ -8,13 +8,13 @@ public class Names {
     public static List<String> PAKISTANI_BOYS_NAMES = Arrays.asList(
             "Ahmad", "Ali", "Abdullah", "Abdul", "Ahsan", "Arham", "Asad", "Ayan", "Bilal", "Danish",
             "Ehsan", "Fahad", "Farhan", "Hamza", "Haris", "Hassan", "Hussain", "Ibrahim", "Imran", "Irfan",
-            "Junaid", "Kamran", "Kashif", "Majid", "Mohammad", "Nadeem", "Nasir", "Omar", "Qasim", "Rashid",
+            "Junaid", "Kamran", "Kashif", "Majid", "Nadeem", "Nasir", "Omar", "Qasim", "Rashid",
             "Saad", "Saeed", "Salman", "Shahid", "Tariq", "Usman", "Waqas", "Yasir", "Zain", "Zubair",
             "Aamir", "Adnan", "Akbar", "Akram", "Altaf", "Ameer", "Amir", "Anwar", "Arsalan", "Asif",
             "Asim", "Atif", "Azhar", "Aziz", "Badar", "Basit", "Faisal", "Faizan", "Faraz", "Furqan",
             "Ghulam", "Haider", "Hamid", "Hammad", "Haseeb", "Hatim", "Iftikhar", "Ismail", "Jameel", "Javed",
             "Jawad", "Kabir", "Khalid", "Luqman", "Mahmood", "Malik", "Mansoor", "Mehboob", "Mehmood", "Mirza",
-            "Moin", "Mudassir", "Muhammad", "Muneeb", "Mushtaq", "Mustafa", "Naeem", "Najeeb", "Naveed", "Noman",
+            "Moin", "Mudassir", "Muneeb", "Mushtaq", "Mustafa", "Naeem", "Najeeb", "Naveed", "Noman",
             "Noor", "Nouman", "Pervaiz", "Qaiser", "Qamar", "Raheel", "Raja", "Rameez", "Rehan", "Rizwan",
             "Sabir", "Sajid", "Salam", "Saleem", "Samad", "Sameer", "Sami", "Shoaib", "Sikander", "Sohail",
             "Subhan", "Sufyan", "Suleman", "Tahir", "Talha", "Tanveer", "Tauseef", "Ubaid", "Umar", "Umer",
@@ -46,7 +46,7 @@ public class Names {
             "Yahya", "Yamin", "Yaqoob", "Yasin", "Yousaf", "Yusha", "Zafar", "Zahoor", "Zaid", "Zaki",
             "Zaman", "Zameer", "Zarar", "Zawar", "Zayd", "Zia", "Zohaib", "Zuhair", "Zulqarnain", "Zunair",
             "Zuraiz", "Aaban", "Aabid", "Aadil", "Aafaq", "Aalam", "Aalee", "Aalim", "Aaqib", "Aarif",
-            "Aatif", "Aazam", "Abbas", "Abir", "Abraar", "Abu", "Abubakar", "Abyan", "Adam", "Adeeb",
+            "Aatif", "Aazam", "Abbas", "Abir", "Abraar", "Abu", "Abyan", "Adam", "Adeeb",
             "Adham", "Affan", "Afnan", "Aftab", "Ahad", "Ahmar", "Ahtasham", "Ahyan", "Ajmal", "Akif",
             "Alam", "Alauddin", "Aleem", "Alyan", "Amaan", "Amaar", "Ammer", "Amyn", "Anay", "Andaleeb",
             "Aniq", "Anis", "Annas", "Aqdas", "Aqeel", "Aqib", "Arafat", "Arbaaz", "Ariyan", "Arish",
@@ -77,7 +77,7 @@ public class Names {
             "Saami", "Saamir", "Saba", "Sabah", "Sabeeh", "Sachal", "Sadaqat", "Sadeed", "Sadeeq", "Sadik",
             "Sahban", "Saheel", "Sajawal", "Sakhi", "Salaar", "Sallam", "Samaad", "Saqr", "Sarim", "Sarmad",
             "Sawal", "Sayf", "Sayyid", "Shaheed", "Shahriyar", "Shahzaib", "Shakoor", "Shan", "Shareef", "Shariq",
-            "Shayaan", "Shujaat", "Shukri", "Zaaheer", "Zaahid", "Zaahir", "Zaaim", "Zafir", "Zakwan", "Zulfiqar"
+            "Shayaan", "Shujaat", "Shukri", "Zaaheer", "Zaahid", "Zaahir", "Zaaim", "Zafir", "Zakwan", "Zulfiqar","Sheikh","Butt","Jutt","Cheema","Chaudary","Rao","Sandhu"
     );
 
     public static List<String> PAKISTANI_GIRLS_NAMES = Arrays.asList(
@@ -86,11 +86,11 @@ public class Names {
             "Ameena", "Amina", "Amna", "Anam", "Anaya", "Anila", "Anum", "Areeba", "Areesha", "Arfa",
             "Arisha", "Arzoo", "Asma", "Atiya", "Ayesha", "Ayla", "Azka", "Azra", "Bakhtawar", "Bareera",
             "Barkat", "Bushra", "Dania", "Dua", "Eman", "Erum", "Fajr", "Falak", "Farah", "Farhana",
-            "Farida", "Farwa", "Fatima", "Fauzia", "Fiza", "Fizza", "Ghazala", "Gul", "Gulnar", "Habiba",
+            "Farida", "Farwa","Fauzia", "Fiza", "Fizza", "Ghazala", "Gul", "Gulnar", "Habiba",
             "Hadia", "Hafsa", "Hajra", "Haleema", "Halima", "Hamna", "Hania", "Hareem", "Hasanat", "Haseena",
             "Hiba", "Hina", "Hira", "Hoorain", "Huda", "Huma", "Humaira", "Hurriya", "Husna", "Iffat",
             "Iman", "Inaya", "Iqra", "Iram", "Irsa", "Isha", "Ishrat", "Isra", "Izza", "Jannat",
-            "Javeria", "Jiya", "Kainat", "Kalsoom", "Kashaf", "Kashmala", "Kausar", "Khadija", "Khalida", "Kiran",
+            "Javeria", "Jiya", "Kainat", "Kalsoom", "Kashaf", "Kashmala", "Kausar", "Khalida", "Kiran",
             "Kulsoom", "Laiba", "Laraib", "Latafat", "Layla", "Madiha", "Maham", "Mahira", "Mahjabeen", "Mahum",
             "Maida", "Maira", "Maisha", "Malaika", "Malika", "Mansha", "Maria", "Marwa", "Mashal", "Masuma",
             "Mehak", "Mehreen", "Mehwish", "Mehza", "Minal", "Minahil", "Misbah", "Momina", "Mubina", "Muneeba",
@@ -135,6 +135,7 @@ public class Names {
             "Tamanna", "Tania", "Taqdees", "Taskeen", "Tasneem", "Tayyaba", "Tehmina", "Ujala", "Urooj", "Uzma",
             "Varda", "Wajeeha", "Warda", "Yasmeen", "Yumna", "Zahida", "Zahra", "Zainab", "Zara", "Zareen",
             "Zarmina", "Zartaj", "Zeenat", "Zoha", "Zohra", "Zonaira", "Zubaira", "Zulekha", "Zunaira"
+            ,"Sheikh","Butt","Jutt","Cheema","Chaudary","Rao","Sandhu"
     );
 
     public static List<String> INDIAN_BOYS_NAMES = Arrays.asList(

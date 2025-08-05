@@ -1,5 +1,6 @@
 package com.randomEmailGenerator.services;
 
+import com.randomEmailGenerator.dto.EmailResponse;
 import com.randomEmailGenerator.dto.GenerateEmailResponse;
 
 import java.util.List;
@@ -15,7 +16,12 @@ public interface GeneratingEmailService {
     GenerateEmailResponse generateRandomIndianBoysName(Integer length);
     GenerateEmailResponse generateRandomIndianGirlsAndBoysName(Integer length);
 
-    boolean saveSelectedEmail(String email);
+    EmailResponse saveSelectedEmail(String email);
 
-    List<GenerateEmailResponse> getUserSavedEmail();
+    GenerateEmailResponse getUserSavedEmail();
+
+    GenerateEmailResponse generatedEmailNotSavedByUser(Integer length,String category);
+
+    GenerateEmailResponse generateByCategory(String category, Integer length);
+
 }

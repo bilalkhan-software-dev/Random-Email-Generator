@@ -1,0 +1,971 @@
+2025-08-06T00:15:50.878+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Starting RandomEmailGeneratorApplication using Java 17.0.12 with PID 7080 (F:\Backend\Random-Email-Generator\target\classes started by BK_QA in F:\Backend\Random-Email-Generator)
+2025-08-06T00:15:50.886+05:00 DEBUG 7080 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-06T00:15:50.887+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T00:15:51.049+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-06T00:15:51.061+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-06T00:15:53.393+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T00:15:53.504+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2025-08-06T00:15:56.122+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-06T00:15:56.144+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T00:15:56.144+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-06T00:15:56.219+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-06T00:15:56.220+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5158 ms
+2025-08-06T00:15:56.582+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T00:15:56.737+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-06T00:15:56.816+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T00:15:57.438+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T00:15:57.495+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-06T00:15:58.957+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e1769ca
+2025-08-06T00:15:58.959+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-06T00:15:59.156+05:00  WARN 7080 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T00:15:59.159+05:00  WARN 7080 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T00:15:59.237+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T00:16:00.927+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T00:16:01.176+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T00:16:01.940+05:00 DEBUG 7080 --- [Random-Email-Generator] [restartedMain] c.r.config.security.JwtFilter            : Filter 'jwtFilter' configured for use
+2025-08-06T00:16:02.069+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-06T00:16:02.279+05:00  WARN 7080 --- [Random-Email-Generator] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T00:16:03.609+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T00:16:03.745+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-06T00:16:03.762+05:00  INFO 7080 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Started RandomEmailGeneratorApplication in 14.042 seconds (process running for 17.924)
+2025-08-06T00:16:30.081+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-06T00:16:30.081+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-06T00:16:30.084+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-06T00:16:30.270+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: GeneratedEmailController :: generateEmailByCategory()
+2025-08-06T00:16:30.274+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: generateByCategory()
+2025-08-06T00:16:30.287+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: generateByCategory() duration: 13ms
+2025-08-06T00:16:30.293+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: GeneratedEmailController :: generateEmailByCategory() duration: 23ms
+2025-08-06T00:20:33.315+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:20:33.315+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:20:34.299+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T00:21:35.877+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:21:35.877+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:21:36.119+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T00:22:18.263+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:22:18.265+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:22:18.522+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T00:22:22.041+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:22:22.043+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:22:22.292+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T00:22:28.732+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:22:28.732+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:22:28.739+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.core.userdetails.UsernameNotFoundException: No account is registered with this username!]
+2025-08-06T00:22:30.751+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:22:30.753+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:22:30.760+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.core.userdetails.UsernameNotFoundException: No account is registered with this username!]
+2025-08-06T00:22:34.478+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:22:34.478+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:22:34.486+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.core.userdetails.UsernameNotFoundException: No account is registered with this username!]
+2025-08-06T00:22:35.265+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:22:35.266+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:22:35.281+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.core.userdetails.UsernameNotFoundException: No account is registered with this username!]
+2025-08-06T00:22:35.586+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:22:35.589+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:22:35.597+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.core.userdetails.UsernameNotFoundException: No account is registered with this username!]
+2025-08-06T00:22:36.464+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:22:36.464+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:22:36.475+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.core.userdetails.UsernameNotFoundException: No account is registered with this username!]
+2025-08-06T00:22:43.991+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:22:43.993+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:22:44.278+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: father@gmail.com and  now generating token
+2025-08-06T00:22:44.280+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T00:22:44.739+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 459ms
+2025-08-06T00:22:44.739+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 746ms
+2025-08-06T00:22:44.739+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 748ms
+2025-08-06T00:22:44.829+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T00:22:44.829+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyMTc2NCwiZXhwIjoxNzU0NDIzOTI0fQ.cBJqbyWPST7QJDkt17mBz1-jQQZOZVSkWJtHahnqRt0
+2025-08-06T00:22:44.831+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T00:22:44.921+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 90ms
+2025-08-06T00:22:44.923+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T00:22:45.002+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T00:22:45.009+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 7ms
+2025-08-06T00:22:45.016+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T00:22:45.016+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T00:22:45.016+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T00:22:45.016+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T00:23:34.620+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:23:34.620+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:23:34.864+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: father@gmail.com and  now generating token
+2025-08-06T00:23:34.869+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T00:23:34.869+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 0ms
+2025-08-06T00:23:34.869+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 249ms
+2025-08-06T00:23:34.869+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 249ms
+2025-08-06T00:23:34.959+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T00:23:34.960+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyMTgxNCwiZXhwIjoxNzU0NDIzOTc0fQ.KlyrPUP8_6pYFJvXa9c-IldesPDQyaxYijodMF-X0R4
+2025-08-06T00:23:34.961+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T00:23:34.965+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 4ms
+2025-08-06T00:23:34.965+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T00:23:34.973+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T00:23:34.978+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 5ms
+2025-08-06T00:23:34.978+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T00:23:34.979+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T00:23:34.979+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T00:23:34.979+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 1ms
+2025-08-06T00:24:05.914+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T00:24:05.914+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyMTgxNCwiZXhwIjoxNzU0NDIzOTc0fQ.KlyrPUP8_6pYFJvXa9c-IldesPDQyaxYijodMF-X0R4
+2025-08-06T00:24:05.914+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T00:24:05.922+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 8ms
+2025-08-06T00:24:05.922+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T00:24:05.939+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T00:24:05.944+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 5ms
+2025-08-06T00:24:05.947+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T00:24:05.949+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T00:24:05.949+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T00:24:05.949+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 2ms
+2025-08-06T00:24:05.959+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T00:24:05.961+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyMTgxNCwiZXhwIjoxNzU0NDIzOTc0fQ.KlyrPUP8_6pYFJvXa9c-IldesPDQyaxYijodMF-X0R4
+2025-08-06T00:24:05.961+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T00:24:05.965+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 4ms
+2025-08-06T00:24:05.965+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T00:24:05.976+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T00:24:05.980+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 4ms
+2025-08-06T00:24:05.982+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T00:24:05.982+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T00:24:05.982+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T00:24:05.982+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T00:24:14.635+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T00:24:14.637+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyMTgxNCwiZXhwIjoxNzU0NDIzOTc0fQ.KlyrPUP8_6pYFJvXa9c-IldesPDQyaxYijodMF-X0R4
+2025-08-06T00:24:14.637+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T00:24:14.639+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T00:24:14.641+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T00:24:14.653+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T00:24:14.656+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T00:24:14.660+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T00:24:14.662+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T00:24:14.662+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T00:24:14.664+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 4ms
+2025-08-06T00:24:14.671+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T00:24:14.671+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyMTgxNCwiZXhwIjoxNzU0NDIzOTc0fQ.KlyrPUP8_6pYFJvXa9c-IldesPDQyaxYijodMF-X0R4
+2025-08-06T00:24:14.671+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T00:24:14.673+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T00:24:14.673+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T00:24:14.683+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T00:24:14.685+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T00:24:14.687+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T00:24:14.687+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T00:24:14.687+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T00:24:14.687+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T00:24:18.374+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T00:24:18.375+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyMTgxNCwiZXhwIjoxNzU0NDIzOTc0fQ.KlyrPUP8_6pYFJvXa9c-IldesPDQyaxYijodMF-X0R4
+2025-08-06T00:24:18.375+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T00:24:18.376+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 1ms
+2025-08-06T00:24:18.376+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T00:24:18.392+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T00:24:18.397+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 5ms
+2025-08-06T00:24:18.399+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T00:24:18.399+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T00:24:18.399+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T00:24:18.399+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T00:24:18.409+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T00:24:18.409+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyMTgxNCwiZXhwIjoxNzU0NDIzOTc0fQ.KlyrPUP8_6pYFJvXa9c-IldesPDQyaxYijodMF-X0R4
+2025-08-06T00:24:18.409+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T00:24:18.411+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T00:24:18.413+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T00:24:18.422+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T00:24:18.428+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 6ms
+2025-08-06T00:24:18.428+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T00:24:18.429+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T00:24:18.430+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 1ms
+2025-08-06T00:24:18.430+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 2ms
+2025-08-06T00:30:35.653+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:30:35.653+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:30:35.887+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T00:30:57.551+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:30:57.553+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:30:57.779+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T00:30:59.510+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:30:59.511+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:30:59.785+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T00:31:01.015+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:31:01.015+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:31:01.254+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T00:33:14.572+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:33:14.572+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:33:14.804+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T00:33:18.245+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T00:33:18.246+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T00:33:18.530+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T00:34:39.823+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: GeneratedEmailController :: generateEmailByCategory()
+2025-08-06T00:34:39.825+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: generateByCategory()
+2025-08-06T00:34:39.827+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: generateByCategory() duration: 2ms
+2025-08-06T00:34:39.828+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: GeneratedEmailController :: generateEmailByCategory() duration: 5ms
+2025-08-06T00:35:07.672+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: GeneratedEmailController :: generateEmailByCategory()
+2025-08-06T00:35:07.672+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: generateByCategory()
+2025-08-06T00:35:07.672+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: generateByCategory() duration: 0ms
+2025-08-06T00:35:07.672+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: GeneratedEmailController :: generateEmailByCategory() duration: 0ms
+2025-08-06T00:35:24.231+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: GeneratedEmailController :: generateEmailByCategory()
+2025-08-06T00:35:24.231+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: generateByCategory()
+2025-08-06T00:35:24.231+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: generateByCategory() duration: 0ms
+2025-08-06T00:35:24.232+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: GeneratedEmailController :: generateEmailByCategory() duration: 1ms
+2025-08-06T01:14:10.892+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:14:10.898+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:14:11.122+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T01:15:01.870+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:15:01.871+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:15:02.089+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T01:18:07.011+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:18:07.012+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:18:07.191+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T01:21:06.863+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:21:06.863+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:21:07.063+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T01:22:16.997+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:22:16.999+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:22:17.176+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T01:25:36.204+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:25:36.204+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:25:36.480+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T01:26:56.031+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:26:56.031+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:26:56.237+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T01:28:06.829+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: GeneratedEmailController :: generateEmailByCategory()
+2025-08-06T01:28:06.829+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: generateByCategory()
+2025-08-06T01:28:06.830+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: generateByCategory() duration: 1ms
+2025-08-06T01:28:06.831+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: GeneratedEmailController :: generateEmailByCategory() duration: 1ms
+2025-08-06T01:28:27.251+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:28:27.251+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:28:27.433+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: bilalkhan@gmail.com and  now generating token
+2025-08-06T01:28:27.433+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T01:28:27.437+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 4ms
+2025-08-06T01:28:27.437+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 186ms
+2025-08-06T01:28:27.437+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 187ms
+2025-08-06T01:28:33.396+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:28:33.396+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:28:33.578+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: bilalkhan@gmail.com and  now generating token
+2025-08-06T01:28:33.578+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T01:28:33.578+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 0ms
+2025-08-06T01:28:33.578+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 182ms
+2025-08-06T01:28:33.578+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 182ms
+2025-08-06T01:29:25.056+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:29:25.057+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:29:25.332+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: bilalkhan@gmail.com and  now generating token
+2025-08-06T01:29:25.334+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T01:29:25.336+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 2ms
+2025-08-06T01:29:25.337+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 280ms
+2025-08-06T01:29:25.337+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 281ms
+2025-08-06T01:29:39.769+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:29:39.769+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:29:40.002+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: bilalkhan@gmail.com and  now generating token
+2025-08-06T01:29:40.002+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T01:29:40.004+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 2ms
+2025-08-06T01:29:40.004+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 235ms
+2025-08-06T01:29:40.004+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 235ms
+2025-08-06T01:29:40.183+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:29:40.185+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU3ODAsImV4cCI6MTc1NDQyNzk0MH0.zjTIfUD-ThMwd8OQRbwPfKPUzrA8-FUbseaJal-O4uE
+2025-08-06T01:29:40.188+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:29:40.199+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 11ms
+2025-08-06T01:29:40.203+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:29:40.223+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:29:40.236+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 13ms
+2025-08-06T01:29:40.237+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:29:40.237+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:29:40.237+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:29:40.237+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 1ms
+2025-08-06T01:32:21.227+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:32:21.227+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:32:21.468+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: bilalkhan@gmail.com and  now generating token
+2025-08-06T01:32:21.469+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T01:32:21.469+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 1ms
+2025-08-06T01:32:21.469+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 242ms
+2025-08-06T01:32:21.469+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 242ms
+2025-08-06T01:32:21.578+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:32:21.578+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDEsImV4cCI6MTc1NDQyODEwMX0.unDXgsQ9BqOaqoOfA4gNm9p44lBA8MxV9elQnMSO4oU
+2025-08-06T01:32:21.578+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:32:21.580+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T01:32:21.580+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:32:21.588+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:32:21.588+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 0ms
+2025-08-06T01:32:21.593+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:32:21.593+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:32:21.593+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:32:21.593+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T01:32:28.045+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:32:28.045+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:32:28.267+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: bilalkhan@gmail.com and  now generating token
+2025-08-06T01:32:28.267+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T01:32:28.268+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 1ms
+2025-08-06T01:32:28.269+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 224ms
+2025-08-06T01:32:28.269+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 224ms
+2025-08-06T01:32:28.335+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:32:28.335+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:32:28.335+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:32:28.337+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T01:32:28.339+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:32:28.345+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:32:28.350+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 5ms
+2025-08-06T01:32:28.350+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:32:28.350+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:32:28.350+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:32:28.350+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T01:34:11.164+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:34:11.164+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:34:11.165+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:34:11.167+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T01:34:11.169+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:34:11.185+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:34:11.185+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 0ms
+2025-08-06T01:34:11.188+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:34:11.188+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:34:11.189+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 1ms
+2025-08-06T01:34:11.189+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 1ms
+2025-08-06T01:34:11.195+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:34:11.195+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:34:11.195+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:34:11.195+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T01:34:11.195+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:34:11.207+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:34:11.210+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T01:34:11.210+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:34:11.210+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:34:11.210+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:34:11.210+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T01:34:40.152+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:34:40.152+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:34:40.152+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:34:40.155+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 3ms
+2025-08-06T01:34:40.155+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:34:40.167+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:34:40.170+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T01:34:40.172+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:34:40.172+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:34:40.172+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:34:40.172+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T01:34:40.178+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:34:40.178+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:34:40.178+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:34:40.180+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T01:34:40.180+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:34:40.198+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:34:40.201+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T01:34:40.203+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:34:40.203+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:34:40.203+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:34:40.203+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T01:36:45.928+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:36:45.928+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:36:45.928+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:36:45.933+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 5ms
+2025-08-06T01:36:45.933+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:36:45.954+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:36:45.957+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T01:36:45.959+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:36:45.959+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:36:46.049+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 90ms
+2025-08-06T01:36:46.055+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 96ms
+2025-08-06T01:36:46.092+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:36:46.092+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:36:46.092+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:36:46.095+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 3ms
+2025-08-06T01:36:46.098+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:36:46.105+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:36:46.107+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:36:46.107+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:36:46.107+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:36:46.117+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 10ms
+2025-08-06T01:36:46.117+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 10ms
+2025-08-06T01:37:15.215+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:37:15.216+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:37:15.218+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:37:15.223+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 5ms
+2025-08-06T01:37:15.223+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:37:15.268+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:37:15.272+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 4ms
+2025-08-06T01:37:15.272+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:37:15.272+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:37:15.274+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 2ms
+2025-08-06T01:37:15.274+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 2ms
+2025-08-06T01:37:15.280+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:37:15.281+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:37:15.281+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:37:15.285+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 4ms
+2025-08-06T01:37:15.285+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:37:15.304+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:37:15.306+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:37:15.306+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:37:15.309+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:37:15.309+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:37:15.309+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 3ms
+2025-08-06T01:37:15.428+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:37:15.428+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:37:15.428+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:37:15.431+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 3ms
+2025-08-06T01:37:15.431+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:37:15.457+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:37:15.462+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 5ms
+2025-08-06T01:37:15.464+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:37:15.464+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:37:15.474+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 10ms
+2025-08-06T01:37:15.474+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 10ms
+2025-08-06T01:37:15.597+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:37:15.597+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:37:15.597+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:37:15.600+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 3ms
+2025-08-06T01:37:15.602+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:37:15.621+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:37:15.631+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 10ms
+2025-08-06T01:37:15.637+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:37:15.639+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:37:15.655+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 16ms
+2025-08-06T01:37:15.655+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 18ms
+2025-08-06T01:40:43.210+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:40:43.210+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:40:43.210+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:40:43.210+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:40:43.210+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:40:43.212+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:40:43.213+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 3ms
+2025-08-06T01:40:43.213+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:40:43.213+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 1ms
+2025-08-06T01:40:43.215+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:40:43.229+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:40:43.229+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:40:43.232+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T01:40:43.232+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T01:40:43.233+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:40:43.233+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:40:43.233+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:40:43.233+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:40:43.235+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 2ms
+2025-08-06T01:40:43.236+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 3ms
+2025-08-06T01:40:43.248+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 15ms
+2025-08-06T01:40:43.248+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 15ms
+2025-08-06T01:40:43.251+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:40:43.251+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:40:43.251+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:40:43.253+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T01:40:43.253+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:40:43.267+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:40:43.269+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:40:43.271+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:40:43.271+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:40:43.271+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:40:43.273+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:40:43.273+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:40:43.282+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 11ms
+2025-08-06T01:40:43.282+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:40:43.291+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 18ms
+2025-08-06T01:40:43.291+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 18ms
+2025-08-06T01:40:43.317+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:40:43.320+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T01:40:43.320+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:40:43.322+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:40:43.322+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:40:43.322+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 2ms
+2025-08-06T01:40:43.497+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:40:43.497+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:40:43.497+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:40:43.500+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 3ms
+2025-08-06T01:40:43.502+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:40:43.513+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:40:43.515+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:40:43.516+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:40:43.517+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:40:43.526+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 9ms
+2025-08-06T01:40:43.528+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 12ms
+2025-08-06T01:40:43.707+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:40:43.707+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:40:43.707+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:40:43.743+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 36ms
+2025-08-06T01:40:43.745+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:40:43.758+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:40:43.761+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T01:40:43.763+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:40:43.763+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:40:43.770+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 7ms
+2025-08-06T01:40:43.770+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 7ms
+2025-08-06T01:42:10.204+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:42:10.204+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:42:10.204+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:42:10.206+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T01:42:10.206+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:42:10.206+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:42:10.206+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:42:10.206+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:42:10.207+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 1ms
+2025-08-06T01:42:10.207+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:42:10.222+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:42:10.222+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:42:10.227+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 5ms
+2025-08-06T01:42:10.227+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 5ms
+2025-08-06T01:42:10.227+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:42:10.227+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:42:10.227+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:42:10.227+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:42:10.227+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:42:10.227+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T01:42:10.237+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:42:10.238+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:42:10.238+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:42:10.242+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 4ms
+2025-08-06T01:42:10.242+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:42:10.244+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 17ms
+2025-08-06T01:42:10.244+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 17ms
+2025-08-06T01:42:10.252+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:42:10.252+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:42:10.252+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:42:10.254+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T01:42:10.254+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:42:10.254+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:42:10.260+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 6ms
+2025-08-06T01:42:10.261+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:42:10.261+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:42:10.261+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:42:10.262+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 1ms
+2025-08-06T01:42:10.268+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:42:10.270+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:42:10.272+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:42:10.272+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:42:10.280+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 8ms
+2025-08-06T01:42:10.280+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 8ms
+2025-08-06T01:42:10.561+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:42:10.561+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:42:10.561+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:42:10.561+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T01:42:10.561+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:42:10.570+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:42:10.572+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:42:10.572+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:42:10.572+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:42:10.583+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 11ms
+2025-08-06T01:42:10.583+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 11ms
+2025-08-06T01:42:11.108+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:42:11.108+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:42:11.108+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:42:11.110+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T01:42:11.110+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:42:11.119+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:42:11.122+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T01:42:11.122+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:42:11.122+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:42:11.132+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 10ms
+2025-08-06T01:42:11.132+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 10ms
+2025-08-06T01:43:35.499+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:43:35.499+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:43:35.499+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:43:35.501+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T01:43:35.501+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:43:35.508+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:43:35.508+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:43:35.508+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:43:35.508+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T01:43:35.510+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:43:35.514+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:43:35.516+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:43:35.518+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:43:35.518+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:43:35.520+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:43:35.522+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:43:35.523+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:43:35.523+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:43:35.523+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:43:35.523+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T01:43:35.529+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 11ms
+2025-08-06T01:43:35.529+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 11ms
+2025-08-06T01:43:35.531+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:43:35.531+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:43:35.531+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:43:35.531+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T01:43:35.531+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:43:35.538+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:43:35.538+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:43:35.538+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:43:35.540+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T01:43:35.540+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:43:35.540+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:43:35.542+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:43:35.546+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:43:35.546+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:43:35.546+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:43:35.546+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T01:43:35.548+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:43:35.550+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:43:35.552+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:43:35.552+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:43:35.562+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 10ms
+2025-08-06T01:43:35.562+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 10ms
+2025-08-06T01:43:35.762+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:43:35.762+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:43:35.762+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:43:35.763+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 1ms
+2025-08-06T01:43:35.763+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:43:35.771+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:43:35.779+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 8ms
+2025-08-06T01:43:35.779+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:43:35.779+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:43:35.788+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 9ms
+2025-08-06T01:43:35.788+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 9ms
+2025-08-06T01:43:36.518+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:43:36.518+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:43:36.518+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:43:36.520+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T01:43:36.520+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:43:36.530+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:43:36.532+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:43:36.533+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:43:36.533+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:43:36.542+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 9ms
+2025-08-06T01:43:36.544+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 11ms
+2025-08-06T01:45:12.227+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:45:12.227+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:45:12.227+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:45:12.230+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 3ms
+2025-08-06T01:45:12.230+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:45:12.242+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:45:12.242+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 0ms
+2025-08-06T01:45:12.242+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:45:12.242+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:45:12.256+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 14ms
+2025-08-06T01:45:12.256+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 14ms
+2025-08-06T01:45:12.262+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:45:12.262+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:45:12.262+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:45:12.262+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T01:45:12.262+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:45:12.273+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:45:12.273+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 0ms
+2025-08-06T01:45:12.275+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:45:12.275+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:45:12.281+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 6ms
+2025-08-06T01:45:12.281+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 6ms
+2025-08-06T01:45:24.646+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: GeneratedEmailController :: generateEmailByCategory()
+2025-08-06T01:45:24.646+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: generateByCategory()
+2025-08-06T01:45:24.646+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: generateByCategory() duration: 0ms
+2025-08-06T01:45:24.646+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: GeneratedEmailController :: generateEmailByCategory() duration: 0ms
+2025-08-06T01:45:28.088+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:45:28.090+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:45:28.090+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:45:28.092+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T01:45:28.092+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:45:28.097+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:45:28.101+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 4ms
+2025-08-06T01:45:28.121+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: UserController :: generatedEmailNotSavedByUser()
+2025-08-06T01:45:28.121+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: generatedEmailNotSavedByUser()
+2025-08-06T01:45:28.130+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: generatedEmailNotSavedByUser() duration: 9ms
+2025-08-06T01:45:28.130+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: UserController :: generatedEmailNotSavedByUser() duration: 9ms
+2025-08-06T01:45:31.486+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:45:31.486+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:45:31.486+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:45:31.486+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T01:45:31.486+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:45:31.486+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:45:31.486+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 0ms
+2025-08-06T01:45:31.497+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: UserController :: saveSelectedEmail()
+2025-08-06T01:45:31.497+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: saveSelectedEmail()
+2025-08-06T01:45:31.821+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: saveSelectedEmail() duration: 324ms
+2025-08-06T01:45:31.821+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: UserController :: saveSelectedEmail() duration: 324ms
+2025-08-06T01:45:36.395+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:45:36.395+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:45:36.395+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:45:36.412+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 17ms
+2025-08-06T01:45:36.412+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:45:36.427+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:45:36.430+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T01:45:36.430+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:45:36.430+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:45:36.438+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 8ms
+2025-08-06T01:45:36.438+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 8ms
+2025-08-06T01:45:36.446+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:45:36.448+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0MjU5NDgsImV4cCI6MTc1NDQyODEwOH0.BRpk0sgIDpRJ1eshmySf82nBd58Xr_uZJH7oJiCVj0Q
+2025-08-06T01:45:36.448+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:45:36.448+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T01:45:36.448+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T01:45:36.455+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:45:36.455+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 0ms
+2025-08-06T01:45:36.458+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:45:36.458+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:45:36.462+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 4ms
+2025-08-06T01:45:36.462+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 4ms
+2025-08-06T01:47:50.111+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:47:50.111+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:47:50.342+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T01:47:55.229+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:47:55.231+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:47:55.459+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T01:47:59.960+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:47:59.960+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:47:59.963+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.core.userdetails.UsernameNotFoundException: No account is registered with this username!]
+2025-08-06T01:48:09.945+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T01:48:09.945+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T01:48:10.188+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: father@gmail.com and  now generating token
+2025-08-06T01:48:10.188+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T01:48:10.188+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 0ms
+2025-08-06T01:48:10.196+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 251ms
+2025-08-06T01:48:10.196+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 251ms
+2025-08-06T01:48:10.258+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:48:10.258+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyNjg5MCwiZXhwIjoxNzU0NDI5MDUwfQ.1nA6tbjcBlzZVwRIKwZweGfqGYFJQUyGfBbu8F7h-mQ
+2025-08-06T01:48:10.260+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:48:10.260+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T01:48:10.260+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T01:48:10.277+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:48:10.278+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 1ms
+2025-08-06T01:48:10.278+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:48:10.278+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:48:10.278+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:48:10.278+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T01:49:01.185+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:49:01.185+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyNjg5MCwiZXhwIjoxNzU0NDI5MDUwfQ.1nA6tbjcBlzZVwRIKwZweGfqGYFJQUyGfBbu8F7h-mQ
+2025-08-06T01:49:01.185+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:49:01.186+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 1ms
+2025-08-06T01:49:01.186+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T01:49:01.195+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:49:01.197+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:49:01.197+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:49:01.198+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:49:01.198+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:49:01.198+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 1ms
+2025-08-06T01:49:01.203+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:49:01.203+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyNjg5MCwiZXhwIjoxNzU0NDI5MDUwfQ.1nA6tbjcBlzZVwRIKwZweGfqGYFJQUyGfBbu8F7h-mQ
+2025-08-06T01:49:01.203+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:49:01.203+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T01:49:01.203+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T01:49:01.210+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:49:01.212+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:49:01.212+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:49:01.212+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:49:01.214+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:49:01.214+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 2ms
+2025-08-06T01:50:33.614+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:50:33.614+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyNjg5MCwiZXhwIjoxNzU0NDI5MDUwfQ.1nA6tbjcBlzZVwRIKwZweGfqGYFJQUyGfBbu8F7h-mQ
+2025-08-06T01:50:33.614+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:50:33.670+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:50:33.670+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyNjg5MCwiZXhwIjoxNzU0NDI5MDUwfQ.1nA6tbjcBlzZVwRIKwZweGfqGYFJQUyGfBbu8F7h-mQ
+2025-08-06T01:50:33.670+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:50:33.681+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 67ms
+2025-08-06T01:50:33.681+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T01:50:33.693+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 23ms
+2025-08-06T01:50:33.693+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T01:50:33.704+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:50:33.705+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 1ms
+2025-08-06T01:50:33.705+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:50:33.707+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:50:33.708+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:50:33.708+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:50:33.708+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T01:50:33.708+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 1ms
+2025-08-06T01:50:33.708+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:50:33.708+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:50:33.713+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:50:33.713+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyNjg5MCwiZXhwIjoxNzU0NDI5MDUwfQ.1nA6tbjcBlzZVwRIKwZweGfqGYFJQUyGfBbu8F7h-mQ
+2025-08-06T01:50:33.713+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:50:33.713+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T01:50:33.713+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T01:50:33.713+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 5ms
+2025-08-06T01:50:33.715+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 7ms
+2025-08-06T01:50:33.728+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:50:33.730+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:50:33.730+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:50:33.730+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:50:33.730+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:50:33.730+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T01:50:33.734+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:50:33.734+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyNjg5MCwiZXhwIjoxNzU0NDI5MDUwfQ.1nA6tbjcBlzZVwRIKwZweGfqGYFJQUyGfBbu8F7h-mQ
+2025-08-06T01:50:33.734+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:50:33.738+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 4ms
+2025-08-06T01:50:33.738+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T01:50:33.744+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:50:33.745+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 1ms
+2025-08-06T01:50:33.745+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:50:33.745+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:50:33.748+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 3ms
+2025-08-06T01:50:33.750+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 5ms
+2025-08-06T01:50:34.060+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:50:34.060+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyNjg5MCwiZXhwIjoxNzU0NDI5MDUwfQ.1nA6tbjcBlzZVwRIKwZweGfqGYFJQUyGfBbu8F7h-mQ
+2025-08-06T01:50:34.060+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:50:34.081+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 21ms
+2025-08-06T01:50:34.081+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T01:50:34.111+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:50:34.122+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 11ms
+2025-08-06T01:50:34.124+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:50:34.124+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:50:34.159+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 35ms
+2025-08-06T01:50:34.159+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 35ms
+2025-08-06T01:50:34.472+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:50:34.472+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyNjg5MCwiZXhwIjoxNzU0NDI5MDUwfQ.1nA6tbjcBlzZVwRIKwZweGfqGYFJQUyGfBbu8F7h-mQ
+2025-08-06T01:50:34.472+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:50:34.475+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 3ms
+2025-08-06T01:50:34.478+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T01:50:34.487+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:50:34.488+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 1ms
+2025-08-06T01:50:34.490+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:50:34.490+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:50:34.494+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 4ms
+2025-08-06T01:50:34.494+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 4ms
+2025-08-06T01:51:31.860+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:51:31.860+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyNjg5MCwiZXhwIjoxNzU0NDI5MDUwfQ.1nA6tbjcBlzZVwRIKwZweGfqGYFJQUyGfBbu8F7h-mQ
+2025-08-06T01:51:31.860+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:51:31.862+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T01:51:31.863+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T01:51:31.871+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:51:31.873+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T01:51:31.873+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:51:31.873+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:51:31.873+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:51:31.873+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T01:51:31.878+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:51:31.878+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyNjg5MCwiZXhwIjoxNzU0NDI5MDUwfQ.1nA6tbjcBlzZVwRIKwZweGfqGYFJQUyGfBbu8F7h-mQ
+2025-08-06T01:51:31.878+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:51:31.878+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T01:51:31.878+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T01:51:31.885+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:51:31.885+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 0ms
+2025-08-06T01:51:31.885+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T01:51:31.885+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T01:51:31.885+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T01:51:31.887+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 2ms
+2025-08-06T01:51:31.954+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:51:31.954+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyNjg5MCwiZXhwIjoxNzU0NDI5MDUwfQ.1nA6tbjcBlzZVwRIKwZweGfqGYFJQUyGfBbu8F7h-mQ
+2025-08-06T01:51:31.954+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:51:31.956+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T01:51:31.956+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T01:51:31.964+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:51:31.964+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 0ms
+2025-08-06T01:51:31.964+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:51:31.964+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:51:31.968+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 4ms
+2025-08-06T01:51:31.968+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 4ms
+2025-08-06T01:51:32.009+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:51:32.009+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyNjg5MCwiZXhwIjoxNzU0NDI5MDUwfQ.1nA6tbjcBlzZVwRIKwZweGfqGYFJQUyGfBbu8F7h-mQ
+2025-08-06T01:51:32.009+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:51:32.009+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T01:51:32.009+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T01:51:32.038+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:51:32.039+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 1ms
+2025-08-06T01:51:32.041+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T01:51:32.041+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T01:51:32.047+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 6ms
+2025-08-06T01:51:32.047+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 6ms
+2025-08-06T01:51:48.988+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T01:51:48.990+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZnVsbCBuYW1lIjoiRmF0aGVyIiwic3ViIjoiZmF0aGVyQGdtYWlsLmNvbSIsImlhdCI6MTc1NDQyNjg5MCwiZXhwIjoxNzU0NDI5MDUwfQ.1nA6tbjcBlzZVwRIKwZweGfqGYFJQUyGfBbu8F7h-mQ
+2025-08-06T01:51:48.990+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T01:51:48.992+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T01:51:48.992+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : username received: father@gmail.com
+2025-08-06T01:51:49.028+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T01:51:49.028+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 0ms
+2025-08-06T01:51:49.034+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: UserController :: generatedEmailNotSavedByUser()
+2025-08-06T01:51:49.034+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: generatedEmailNotSavedByUser()
+2025-08-06T01:51:49.040+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: generatedEmailNotSavedByUser() duration: 6ms
+2025-08-06T01:51:49.040+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: UserController :: generatedEmailNotSavedByUser() duration: 6ms
+2025-08-06T01:58:13.157+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: AuthController :: registerUser()
+2025-08-06T01:58:13.157+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: registerUser()
+2025-08-06T01:58:13.529+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T01:58:13.529+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 0ms
+2025-08-06T01:58:13.529+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: registerUser() duration: 372ms
+2025-08-06T01:58:13.529+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: AuthController :: registerUser() duration: 372ms
+2025-08-06T01:59:36.381+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthController :: registerUser()
+2025-08-06T01:59:36.382+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: registerUser()
+2025-08-06T01:59:36.393+05:00 ERROR 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.services.Impl.AuthServiceImpl        : Username is already in use
+2025-08-06T01:59:36.401+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.randomEmailGenerator.exception.EmailAlreadyExistException: Username already taken!]
+2025-08-06T01:59:41.767+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthController :: registerUser()
+2025-08-06T01:59:41.767+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: registerUser()
+2025-08-06T01:59:41.770+05:00 ERROR 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.services.Impl.AuthServiceImpl        : Username is already in use
+2025-08-06T01:59:41.773+05:00  WARN 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.randomEmailGenerator.exception.EmailAlreadyExistException: Username already taken!]
+2025-08-06T02:00:09.449+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthController :: registerUser()
+2025-08-06T02:00:09.449+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: registerUser()
+2025-08-06T02:00:09.695+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T02:00:09.697+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 2ms
+2025-08-06T02:00:09.697+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: registerUser() duration: 248ms
+2025-08-06T02:00:09.697+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: AuthController :: registerUser() duration: 248ms
+2025-08-06T02:00:09.830+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T02:00:09.830+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwiZnVsbCBuYW1lIjoiQmlsYWwgQXNsYW0iLCJzdWIiOiJiaWxhbF9hc2xhbUBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0Mjc2MDksImV4cCI6MTc1NDQyOTc2OX0.eQBtinTUmoZ-Vw-oEdxa1DajqVW2kaKM70zFhaKD120
+2025-08-06T02:00:09.830+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T02:00:09.830+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T02:00:09.830+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : username received: bilal_aslam@gmail.com
+2025-08-06T02:00:09.839+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T02:00:09.839+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 0ms
+2025-08-06T02:00:09.839+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: UserController :: fetchUserProfile()
+2025-08-06T02:00:09.839+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: userProfile()
+2025-08-06T02:00:09.839+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: userProfile() duration: 0ms
+2025-08-06T02:00:09.839+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: UserController :: fetchUserProfile() duration: 0ms
+2025-08-06T02:00:13.941+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T02:00:13.941+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwiZnVsbCBuYW1lIjoiQmlsYWwgQXNsYW0iLCJzdWIiOiJiaWxhbF9hc2xhbUBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0Mjc2MDksImV4cCI6MTc1NDQyOTc2OX0.eQBtinTUmoZ-Vw-oEdxa1DajqVW2kaKM70zFhaKD120
+2025-08-06T02:00:13.943+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T02:00:13.945+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T02:00:13.945+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : username received: bilal_aslam@gmail.com
+2025-08-06T02:00:13.955+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T02:00:13.958+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T02:00:13.962+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T02:00:13.962+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T02:00:13.966+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 4ms
+2025-08-06T02:00:13.966+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 4ms
+2025-08-06T02:00:13.973+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T02:00:13.973+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwiZnVsbCBuYW1lIjoiQmlsYWwgQXNsYW0iLCJzdWIiOiJiaWxhbF9hc2xhbUBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0Mjc2MDksImV4cCI6MTc1NDQyOTc2OX0.eQBtinTUmoZ-Vw-oEdxa1DajqVW2kaKM70zFhaKD120
+2025-08-06T02:00:13.973+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T02:00:13.975+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T02:00:13.976+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : username received: bilal_aslam@gmail.com
+2025-08-06T02:00:13.979+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T02:00:13.979+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 0ms
+2025-08-06T02:00:13.982+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T02:00:13.982+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T02:00:13.982+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 0ms
+2025-08-06T02:00:13.982+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 0ms
+2025-08-06T02:00:51.296+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: GeneratedEmailController :: generateEmailByCategory()
+2025-08-06T02:00:51.296+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: generateByCategory()
+2025-08-06T02:00:51.296+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: generateByCategory() duration: 0ms
+2025-08-06T02:00:51.297+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: GeneratedEmailController :: generateEmailByCategory() duration: 1ms
+2025-08-06T02:00:56.034+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T02:00:56.034+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwiZnVsbCBuYW1lIjoiQmlsYWwgQXNsYW0iLCJzdWIiOiJiaWxhbF9hc2xhbUBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0Mjc2MDksImV4cCI6MTc1NDQyOTc2OX0.eQBtinTUmoZ-Vw-oEdxa1DajqVW2kaKM70zFhaKD120
+2025-08-06T02:00:56.034+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T02:00:56.034+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T02:00:56.034+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : username received: bilal_aslam@gmail.com
+2025-08-06T02:00:56.041+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T02:00:56.042+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 1ms
+2025-08-06T02:00:56.042+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: UserController :: saveSelectedEmail()
+2025-08-06T02:00:56.042+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: saveSelectedEmail()
+2025-08-06T02:00:56.060+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: saveSelectedEmail() duration: 18ms
+2025-08-06T02:00:56.060+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: UserController :: saveSelectedEmail() duration: 18ms
+2025-08-06T02:01:01.972+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T02:01:01.972+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwiZnVsbCBuYW1lIjoiQmlsYWwgQXNsYW0iLCJzdWIiOiJiaWxhbF9hc2xhbUBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0Mjc2MDksImV4cCI6MTc1NDQyOTc2OX0.eQBtinTUmoZ-Vw-oEdxa1DajqVW2kaKM70zFhaKD120
+2025-08-06T02:01:01.972+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T02:01:01.972+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T02:01:01.973+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : username received: bilal_aslam@gmail.com
+2025-08-06T02:01:01.990+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T02:01:01.991+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 1ms
+2025-08-06T02:01:01.991+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T02:01:01.991+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T02:01:01.997+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 6ms
+2025-08-06T02:01:01.997+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 6ms
+2025-08-06T02:01:02.010+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T02:01:02.010+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwiZnVsbCBuYW1lIjoiQmlsYWwgQXNsYW0iLCJzdWIiOiJiaWxhbF9hc2xhbUBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0Mjc2MDksImV4cCI6MTc1NDQyOTc2OX0.eQBtinTUmoZ-Vw-oEdxa1DajqVW2kaKM70zFhaKD120
+2025-08-06T02:01:02.010+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T02:01:02.010+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T02:01:02.010+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : username received: bilal_aslam@gmail.com
+2025-08-06T02:01:02.025+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T02:01:02.027+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T02:01:02.027+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T02:01:02.029+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T02:01:02.036+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 7ms
+2025-08-06T02:01:02.036+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 9ms
+2025-08-06T02:01:24.339+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T02:01:24.339+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwiZnVsbCBuYW1lIjoiQmlsYWwgQXNsYW0iLCJzdWIiOiJiaWxhbF9hc2xhbUBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0Mjc2MDksImV4cCI6MTc1NDQyOTc2OX0.eQBtinTUmoZ-Vw-oEdxa1DajqVW2kaKM70zFhaKD120
+2025-08-06T02:01:24.339+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T02:01:24.339+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T02:01:24.339+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : username received: bilal_aslam@gmail.com
+2025-08-06T02:01:24.357+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T02:01:24.360+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T02:01:24.360+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T02:01:24.360+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T02:01:24.367+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 7ms
+2025-08-06T02:01:24.367+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 7ms
+2025-08-06T02:01:24.374+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T02:01:24.374+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwiZnVsbCBuYW1lIjoiQmlsYWwgQXNsYW0iLCJzdWIiOiJiaWxhbF9hc2xhbUBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0Mjc2MDksImV4cCI6MTc1NDQyOTc2OX0.eQBtinTUmoZ-Vw-oEdxa1DajqVW2kaKM70zFhaKD120
+2025-08-06T02:01:24.374+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T02:01:24.376+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T02:01:24.376+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : username received: bilal_aslam@gmail.com
+2025-08-06T02:01:24.381+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T02:01:24.384+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T02:01:24.384+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: UserController :: getUserSavedEmail()
+2025-08-06T02:01:24.384+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: GeneratingEmailServiceImpl :: getUserSavedEmail()
+2025-08-06T02:01:24.394+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: GeneratingEmailServiceImpl :: getUserSavedEmail() duration: 10ms
+2025-08-06T02:01:24.394+05:00  INFO 7080 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: UserController :: getUserSavedEmail() duration: 10ms
+2025-08-06T02:08:33.032+05:00  INFO 7080 --- [Random-Email-Generator] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T02:08:33.750+05:00  INFO 7080 --- [Random-Email-Generator] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T02:08:33.779+05:00  INFO 7080 --- [Random-Email-Generator] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T02:08:33.811+05:00  INFO 7080 --- [Random-Email-Generator] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-06T02:08:33.842+05:00  INFO 7080 --- [Random-Email-Generator] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

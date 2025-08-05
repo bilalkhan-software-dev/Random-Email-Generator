@@ -24,7 +24,7 @@ public class GeneratedEmail {
     @JoinColumn(name = "user_id",nullable = false)
     private User user;
 
-    private boolean isSelected;
+    private boolean isSelected = false;
 
     private LocalDateTime createdAt;
 

@@ -4,6 +4,7 @@ package com.randomEmailGenerator.dto;
 import lombok.Builder;
 import lombok.Data;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,12 +20,12 @@ public class GenerateEmailResponse {
     private List<Email> email = new ArrayList<>();
 
 
-
     @Data
     @Builder
     public static class Email {
         private Integer id;
         private String email;
+        private LocalDateTime createdAt;
     }
 
 }
