@@ -1,8 +1,10 @@
 package com.randomEmailGenerator.services.Impl;
 
 import com.randomEmailGenerator.dto.UserResponse;
+import com.randomEmailGenerator.entity.GeneratedEmail;
 import com.randomEmailGenerator.entity.User;
 import com.randomEmailGenerator.exception.ResourceNotFoundException;
+import com.randomEmailGenerator.repository.GeneratedEmailRepository;
 import com.randomEmailGenerator.repository.UserRepository;
 import com.randomEmailGenerator.services.UserService;
 import lombok.RequiredArgsConstructor;
@@ -15,6 +17,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
+    private final GeneratedEmailRepository generatedEmailRepository;
 
     @Override
     public void deleteUser(Integer userId) {
@@ -23,14 +26,19 @@ public class UserServiceImpl implements UserService {
                 () -> new ResourceNotFoundException("User not found with id: " + userId)
         );
         userRepository.delete(user);
-
     }
+
 
     @Override
     public UserResponse disableAndEnableUser(Integer userId) {
         User user = userRepository.findById(userId).orElseThrow(
                 () -> new ResourceNotFoundException("User not found with id: " + userId)
         );
+
+        if (!user.getUsername().equalsIgnoreCase("bilalkhan.devse@gmail.com")) {
+            throw new IllegalArgumentException("Only father can enable/disable user");
+        }
+
 
         // Toggle the enabled status
         user.setIsEnabled(!user.getIsEnabled());
