@@ -75,7 +75,7 @@ public class AuthServiceImpl implements AuthService {
                 () -> new UsernameNotFoundException("No account is registered with this username!")
         );
         if (!user.getIsEnabled()) {
-            throw new DisabledException("Your account is disabled");
+            throw new DisabledException("Your account has been disabled");
         }
 
 

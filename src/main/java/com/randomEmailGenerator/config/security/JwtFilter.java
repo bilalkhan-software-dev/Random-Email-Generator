@@ -77,7 +77,7 @@ public class JwtFilter extends OncePerRequestFilter {
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
         response.setStatus(HttpStatus.FORBIDDEN.value());
-        Object errors = GenericResponse.builder().status("failed").message("User account is disabled").httpStatus(HttpStatus.FORBIDDEN).build().createResponse().getBody();
+        Object errors = GenericResponse.builder().status("failed").message("Your account has been disabled").httpStatus(HttpStatus.FORBIDDEN).build().createResponse().getBody();
         response.getWriter().write(new ObjectMapper().writeValueAsString(errors));
     }
 

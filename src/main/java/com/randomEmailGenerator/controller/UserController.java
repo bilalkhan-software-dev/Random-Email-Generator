@@ -80,7 +80,7 @@ public class UserController {
         return responseHandler.createBuildResponse("User detail retrieved successfully!", userDetailById, HttpStatus.OK);
     }
 
-    @GetMapping("/")
+    @GetMapping("/all")
     public ResponseEntity<?> getAllUser() {
 
         List<UserResponse> allUsers = userService.getAllUsers();
@@ -96,7 +96,7 @@ public class UserController {
         return responseHandler.createBuildResponseMessage("User deleted successfully with id: " + userId, HttpStatus.OK);
     }
 
-    @PutMapping("/disable/userId")
+    @PutMapping("/disable/{userId}")
     public ResponseEntity<?> disableUser(@PathVariable Integer userId) {
         UserResponse response = userService.disableAndEnableUser(userId);
         String message = response.getIsEnabled() ? "User is enabled successfully!" : "User is disabled successfully!";

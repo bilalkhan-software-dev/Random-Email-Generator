@@ -969,3 +969,799 @@
 2025-08-06T02:08:33.779+05:00  INFO 7080 --- [Random-Email-Generator] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-08-06T02:08:33.811+05:00  INFO 7080 --- [Random-Email-Generator] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-08-06T02:08:33.842+05:00  INFO 7080 --- [Random-Email-Generator] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-06T09:09:40.890+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Starting RandomEmailGeneratorApplication using Java 17.0.12 with PID 10876 (F:\Backend\Random-Email-Generator\target\classes started by BK_QA in F:\Backend\Random-Email-Generator)
+2025-08-06T09:09:40.906+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-06T09:09:40.908+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T09:09:41.168+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-06T09:09:41.168+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-06T09:09:51.919+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T09:09:52.230+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 274 ms. Found 2 JPA repository interfaces.
+2025-08-06T09:09:55.882+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-06T09:09:55.917+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T09:09:55.919+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-06T09:09:56.685+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-06T09:09:56.686+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 15516 ms
+2025-08-06T09:09:58.111+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T09:09:58.255+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-06T09:09:58.337+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T09:09:59.118+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T09:09:59.180+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-06T09:10:00.656+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@515d43f0
+2025-08-06T09:10:00.663+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-06T09:10:00.838+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T09:10:00.840+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T09:10:00.892+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T09:10:02.571+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T09:10:02.817+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:10:03.609+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.config.security.JwtFilter            : Filter 'jwtFilter' configured for use
+2025-08-06T09:10:03.752+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-06T09:10:03.944+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T09:10:05.554+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T09:10:05.683+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-06T09:10:05.696+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Started RandomEmailGeneratorApplication in 27.753 seconds (process running for 37.205)
+2025-08-06T09:10:46.844+05:00  INFO 10876 --- [Random-Email-Generator] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-08-06T09:10:46.850+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T09:10:47.006+05:00  INFO 10876 --- [Random-Email-Generator] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T09:10:47.014+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:10:47.020+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-06T09:10:47.081+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-06T09:10:47.248+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Starting RandomEmailGeneratorApplication using Java 17.0.12 with PID 10876 (F:\Backend\Random-Email-Generator\target\classes started by BK_QA in F:\Backend\Random-Email-Generator)
+2025-08-06T09:10:47.248+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-06T09:10:47.248+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T09:10:47.671+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T09:10:47.708+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2025-08-06T09:10:48.258+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-06T09:10:48.261+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T09:10:48.263+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-06T09:10:48.327+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-06T09:10:48.327+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1075 ms
+2025-08-06T09:10:48.744+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T09:10:48.751+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T09:10:48.773+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T09:10:48.776+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-06T09:10:48.810+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46439c2
+2025-08-06T09:10:48.810+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-06T09:10:48.812+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T09:10:48.812+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T09:10:48.812+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T09:10:49.513+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T09:10:49.562+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:10:50.173+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.config.security.JwtFilter            : Filter 'jwtFilter' configured for use
+2025-08-06T09:10:50.266+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-06T09:10:50.714+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T09:10:51.808+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T09:10:51.850+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-06T09:10:51.864+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Started RandomEmailGeneratorApplication in 4.673 seconds (process running for 83.374)
+2025-08-06T09:10:51.870+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T09:10:58.486+05:00  INFO 10876 --- [Random-Email-Generator] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-06T09:10:58.487+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T09:10:58.708+05:00  INFO 10876 --- [Random-Email-Generator] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T09:10:58.717+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:10:58.717+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-06T09:10:58.729+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-08-06T09:10:58.993+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Starting RandomEmailGeneratorApplication using Java 17.0.12 with PID 10876 (F:\Backend\Random-Email-Generator\target\classes started by BK_QA in F:\Backend\Random-Email-Generator)
+2025-08-06T09:10:58.995+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-06T09:10:58.999+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T09:11:05.043+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T09:11:05.198+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144 ms. Found 2 JPA repository interfaces.
+2025-08-06T09:11:05.764+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-06T09:11:05.764+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T09:11:05.766+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-06T09:11:05.823+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-06T09:11:05.823+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6816 ms
+2025-08-06T09:11:06.050+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T09:11:06.056+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T09:11:06.077+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T09:11:06.080+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-08-06T09:11:06.118+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d3a44f
+2025-08-06T09:11:06.118+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-08-06T09:11:06.122+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T09:11:06.122+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T09:11:06.122+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T09:11:06.248+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T09:11:06.284+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:11:06.531+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.config.security.JwtFilter            : Filter 'jwtFilter' configured for use
+2025-08-06T09:11:06.604+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-06T09:11:06.901+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T09:11:09.753+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T09:11:09.822+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-06T09:11:09.843+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Started RandomEmailGeneratorApplication in 10.944 seconds (process running for 101.352)
+2025-08-06T09:11:09.847+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T09:11:51.324+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-06T09:11:51.324+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-06T09:11:51.329+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-08-06T09:12:20.484+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T09:12:20.488+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T09:12:21.617+05:00  WARN 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-08-06T09:12:30.099+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T09:12:30.100+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T09:12:30.108+05:00  WARN 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.core.userdetails.UsernameNotFoundException: No account is registered with this username!]
+2025-08-06T09:12:38.027+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T09:12:38.027+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T09:12:38.268+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: bilalkhan@gmail.com and  now generating token
+2025-08-06T09:12:38.275+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T09:12:38.583+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 308ms
+2025-08-06T09:12:38.588+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 561ms
+2025-08-06T09:12:38.588+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 561ms
+2025-08-06T09:13:27.918+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:13:27.920+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0NTM1NTgsImV4cCI6MTc1NDQ1NTcxOH0.N6hKIYB_8nbdBzMjUQRhXWe_AKd_EQ9ofnQYj4MJwVQ
+2025-08-06T09:13:27.920+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:13:28.110+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 190ms
+2025-08-06T09:13:28.112+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T09:13:28.236+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:13:28.240+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 4ms
+2025-08-06T09:13:28.247+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: UserController :: getAllUser()
+2025-08-06T09:13:28.249+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: getAllUsers()
+2025-08-06T09:13:28.490+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: UserServiceImpl :: getAllUsers() duration: 243ms
+2025-08-06T09:13:28.491+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: UserController :: getAllUser() duration: 244ms
+2025-08-06T09:15:36.786+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:15:36.786+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0NTM1NTgsImV4cCI6MTc1NDQ1NTcxOH0.N6hKIYB_8nbdBzMjUQRhXWe_AKd_EQ9ofnQYj4MJwVQ
+2025-08-06T09:15:36.786+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:15:36.790+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 4ms
+2025-08-06T09:15:36.792+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T09:15:36.806+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:15:36.808+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T09:15:36.810+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: UserController :: userDetailsById()
+2025-08-06T09:15:36.810+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: getUserDetailById()
+2025-08-06T09:15:36.849+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: UserServiceImpl :: getUserDetailById() duration: 39ms
+2025-08-06T09:15:36.849+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: UserController :: userDetailsById() duration: 39ms
+2025-08-06T09:16:29.770+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:16:29.770+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0NTM1NTgsImV4cCI6MTc1NDQ1NTcxOH0.N6hKIYB_8nbdBzMjUQRhXWe_AKd_EQ9ofnQYj4MJwVQ
+2025-08-06T09:16:29.773+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:16:29.773+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T09:16:29.773+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T09:16:29.783+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:16:29.786+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T09:16:29.799+05:00  WARN 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/v1/user/disable/2.]
+2025-08-06T09:16:58.428+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:16:58.428+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0NTM1NTgsImV4cCI6MTc1NDQ1NTcxOH0.N6hKIYB_8nbdBzMjUQRhXWe_AKd_EQ9ofnQYj4MJwVQ
+2025-08-06T09:16:58.428+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:16:58.429+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 1ms
+2025-08-06T09:16:58.429+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T09:16:58.441+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:16:58.444+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T09:16:58.450+05:00  WARN 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/v1/user/disable/1.]
+2025-08-06T09:17:22.790+05:00  INFO 10876 --- [Random-Email-Generator] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-08-06T09:17:22.792+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T09:17:22.945+05:00  INFO 10876 --- [Random-Email-Generator] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T09:17:22.949+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:17:22.951+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-08-06T09:17:22.955+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-08-06T09:17:23.088+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Starting RandomEmailGeneratorApplication using Java 17.0.12 with PID 10876 (F:\Backend\Random-Email-Generator\target\classes started by BK_QA in F:\Backend\Random-Email-Generator)
+2025-08-06T09:17:23.088+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-06T09:17:23.088+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T09:17:23.404+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T09:17:23.434+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2025-08-06T09:17:23.773+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-06T09:17:23.777+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T09:17:23.777+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-06T09:17:23.834+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-06T09:17:23.836+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 744 ms
+2025-08-06T09:17:24.054+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T09:17:24.060+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T09:17:24.083+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T09:17:24.086+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-08-06T09:17:24.129+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@418d6051
+2025-08-06T09:17:24.129+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-08-06T09:17:24.131+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T09:17:24.131+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T09:17:24.131+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T09:17:24.317+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T09:17:24.370+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:17:24.912+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.config.security.JwtFilter            : Filter 'jwtFilter' configured for use
+2025-08-06T09:17:25.054+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-06T09:17:25.297+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T09:17:26.560+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T09:17:26.610+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-06T09:17:26.626+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Started RandomEmailGeneratorApplication in 3.582 seconds (process running for 478.136)
+2025-08-06T09:17:26.631+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T09:17:28.021+05:00  INFO 10876 --- [Random-Email-Generator] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-06T09:17:28.023+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T09:17:28.154+05:00  INFO 10876 --- [Random-Email-Generator] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T09:17:28.161+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:17:28.161+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-08-06T09:17:28.164+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-08-06T09:17:28.351+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Starting RandomEmailGeneratorApplication using Java 17.0.12 with PID 10876 (F:\Backend\Random-Email-Generator\target\classes started by BK_QA in F:\Backend\Random-Email-Generator)
+2025-08-06T09:17:28.353+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-06T09:17:28.353+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T09:17:28.849+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T09:17:28.877+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2025-08-06T09:17:29.192+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-06T09:17:29.196+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T09:17:29.198+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-06T09:17:29.239+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-06T09:17:29.239+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 883 ms
+2025-08-06T09:17:29.487+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T09:17:29.494+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T09:17:29.519+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T09:17:29.520+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-08-06T09:17:29.543+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c43f4dd
+2025-08-06T09:17:29.543+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-08-06T09:17:29.544+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T09:17:29.544+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T09:17:29.544+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T09:17:29.651+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T09:17:29.687+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:17:30.065+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.config.security.JwtFilter            : Filter 'jwtFilter' configured for use
+2025-08-06T09:17:30.173+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-06T09:17:30.405+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T09:17:31.337+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T09:17:31.375+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-06T09:17:31.386+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Started RandomEmailGeneratorApplication in 3.114 seconds (process running for 482.895)
+2025-08-06T09:17:31.390+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T09:17:31.949+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-06T09:17:31.949+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-06T09:17:31.953+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-08-06T09:17:31.955+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:17:31.955+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0NTM1NTgsImV4cCI6MTc1NDQ1NTcxOH0.N6hKIYB_8nbdBzMjUQRhXWe_AKd_EQ9ofnQYj4MJwVQ
+2025-08-06T09:17:31.955+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:17:37.645+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:17:37.645+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0NTM1NTgsImV4cCI6MTc1NDQ1NTcxOH0.N6hKIYB_8nbdBzMjUQRhXWe_AKd_EQ9ofnQYj4MJwVQ
+2025-08-06T09:17:37.645+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:17:45.491+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T09:17:45.492+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T09:17:45.902+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: bilalkhan@gmail.com and  now generating token
+2025-08-06T09:17:45.903+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T09:17:45.907+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 4ms
+2025-08-06T09:17:45.909+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 416ms
+2025-08-06T09:17:45.909+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 418ms
+2025-08-06T09:18:24.874+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:18:24.874+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0NTM4NjUsImV4cCI6MTc1NDQ1NjAyNX0.m_dDg2clK8qwDklXkq9x0k23DuZZaJcCafLoGKubSrM
+2025-08-06T09:18:24.874+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:18:24.876+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T09:18:24.878+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T09:18:24.955+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:18:24.961+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 6ms
+2025-08-06T09:18:24.966+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: UserController :: disableUser()
+2025-08-06T09:18:24.966+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: disableAndEnableUser()
+2025-08-06T09:18:25.110+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: UserServiceImpl :: disableAndEnableUser() duration: 144ms
+2025-08-06T09:18:25.111+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: UserController :: disableUser() duration: 145ms
+2025-08-06T09:18:35.676+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:18:35.676+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0NTM4NjUsImV4cCI6MTc1NDQ1NjAyNX0.m_dDg2clK8qwDklXkq9x0k23DuZZaJcCafLoGKubSrM
+2025-08-06T09:18:35.676+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:18:35.676+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T09:18:35.676+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T09:19:30.944+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:19:30.944+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0NTM4NjUsImV4cCI6MTc1NDQ1NjAyNX0.m_dDg2clK8qwDklXkq9x0k23DuZZaJcCafLoGKubSrM
+2025-08-06T09:19:30.944+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:19:30.946+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T09:19:30.946+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T09:19:52.047+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T09:19:52.049+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T09:19:52.063+05:00  WARN 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.DisabledException: Your account is disabled]
+2025-08-06T09:21:20.413+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T09:21:20.413+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T09:21:20.429+05:00  WARN 10876 --- [Random-Email-Generator] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.DisabledException: Your account is disabled]
+2025-08-06T09:21:23.468+05:00  INFO 10876 --- [Random-Email-Generator] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)
+2025-08-06T09:21:23.470+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T09:21:23.621+05:00  INFO 10876 --- [Random-Email-Generator] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T09:21:23.625+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:21:23.625+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-08-06T09:21:23.630+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-08-06T09:21:23.758+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Starting RandomEmailGeneratorApplication using Java 17.0.12 with PID 10876 (F:\Backend\Random-Email-Generator\target\classes started by BK_QA in F:\Backend\Random-Email-Generator)
+2025-08-06T09:21:23.758+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-06T09:21:23.758+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T09:21:24.118+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T09:21:24.145+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2025-08-06T09:21:24.228+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Could not enhance configuration class [com.randomEmailGenerator.config.security.SecurityConfig]. Consider declaring @Configuration(proxyBeanMethods=false) without inter-bean references between @Bean methods on the configuration class, avoiding the need for CGLIB enhancement.
+2025-08-06T09:21:24.243+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-06T09:21:24.289+05:00 ERROR 10876 --- [Random-Email-Generator] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Could not enhance configuration class [com.randomEmailGenerator.config.security.SecurityConfig]. Consider declaring @Configuration(proxyBeanMethods=false) without inter-bean references between @Bean methods on the configuration class, avoiding the need for CGLIB enhancement.
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:136) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:539) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:311) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:363) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:153) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.3.jar:3.5.3]
+	at com.randomEmailGenerator.RandomEmailGeneratorApplication.main(RandomEmailGeneratorApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.3.jar:3.5.3]
+Caused by: org.springframework.cglib.core.CodeGenerationException: java.lang.NoClassDefFoundError-->com/randomEmailGenerator/config/security/JwtFilter
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:202) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:128) ~[spring-context-6.2.8.jar:6.2.8]
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/randomEmailGenerator/config/security/JwtFilter
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2555) ~[na:na]
+	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:655) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.cglib.transform.TransformingClassGenerator.generateClass(TransformingClassGenerator.java:35) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:26) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.cglib.core.ClassLoaderAwareGeneratorStrategy.lambda$new$0(ClassLoaderAwareGeneratorStrategy.java:41) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.cglib.core.ClassLoaderAwareGeneratorStrategy.generate(ClassLoaderAwareGeneratorStrategy.java:76) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:370) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:575) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:133) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:321) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:562) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:407) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:198) ~[spring-context-6.2.8.jar:6.2.8]
+	... 19 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.randomEmailGenerator.config.security.JwtFilter
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.5.3.jar:3.5.3]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	... 34 common frames omitted
+
+2025-08-06T09:21:28.339+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Starting RandomEmailGeneratorApplication using Java 17.0.12 with PID 10876 (F:\Backend\Random-Email-Generator\target\classes started by BK_QA in F:\Backend\Random-Email-Generator)
+2025-08-06T09:21:28.339+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-06T09:21:28.339+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T09:21:28.729+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T09:21:28.754+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2025-08-06T09:21:28.983+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-06T09:21:28.985+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T09:21:28.985+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-06T09:21:29.012+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-06T09:21:29.012+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 669 ms
+2025-08-06T09:21:29.124+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T09:21:29.134+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T09:21:29.146+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T09:21:29.149+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-08-06T09:21:29.174+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ff0aaf8
+2025-08-06T09:21:29.174+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-08-06T09:21:29.175+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T09:21:29.175+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T09:21:29.175+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T09:21:29.264+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T09:21:29.295+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:21:29.616+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.config.security.JwtFilter            : Filter 'jwtFilter' configured for use
+2025-08-06T09:21:29.687+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-06T09:21:29.876+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T09:21:31.525+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T09:21:31.567+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-06T09:21:31.577+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Started RandomEmailGeneratorApplication in 3.275 seconds (process running for 723.085)
+2025-08-06T09:21:31.579+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T09:21:32.246+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-06T09:21:32.248+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-06T09:21:32.248+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-06T09:21:32.254+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T09:21:32.254+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T09:21:32.276+05:00  WARN 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.DisabledException: Your account has been disabled]
+2025-08-06T09:21:36.571+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T09:21:36.571+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T09:21:36.629+05:00  WARN 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.DisabledException: Your account has been disabled]
+2025-08-06T09:21:42.238+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:21:42.238+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0NTM4NjUsImV4cCI6MTc1NDQ1NjAyNX0.m_dDg2clK8qwDklXkq9x0k23DuZZaJcCafLoGKubSrM
+2025-08-06T09:21:42.238+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:22:00.428+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T09:22:00.428+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T09:22:00.839+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: khan@gmail.com and  now generating token
+2025-08-06T09:22:00.839+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T09:22:00.839+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 0ms
+2025-08-06T09:22:00.839+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 411ms
+2025-08-06T09:22:00.839+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 411ms
+2025-08-06T09:22:49.293+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:22:49.293+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZnVsbCBuYW1lIjoiS2hhbiIsInN1YiI6ImtoYW5AZ21haWwuY29tIiwiaWF0IjoxNzU0NDU0MTIwLCJleHAiOjE3NTQ0NTYyODB9.MGPSZP95Q9QIC0Gc5JlKpDnP7yG-_gWzWgMYb_-_Gn8
+2025-08-06T09:22:49.293+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:22:49.293+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T09:22:49.293+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : username received: khan@gmail.com
+2025-08-06T09:22:49.350+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:22:49.357+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 7ms
+2025-08-06T09:22:49.362+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: UserController :: disableUser()
+2025-08-06T09:22:49.362+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: disableAndEnableUser()
+2025-08-06T09:22:49.387+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: UserServiceImpl :: disableAndEnableUser() duration: 25ms
+2025-08-06T09:22:49.389+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: UserController :: disableUser() duration: 27ms
+2025-08-06T09:23:10.564+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:23:10.564+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZnVsbCBuYW1lIjoiS2hhbiIsInN1YiI6ImtoYW5AZ21haWwuY29tIiwiaWF0IjoxNzU0NDU0MTIwLCJleHAiOjE3NTQ0NTYyODB9.MGPSZP95Q9QIC0Gc5JlKpDnP7yG-_gWzWgMYb_-_Gn8
+2025-08-06T09:23:10.564+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:23:10.564+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T09:23:10.564+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : username received: khan@gmail.com
+2025-08-06T09:23:10.576+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:23:10.576+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 0ms
+2025-08-06T09:23:10.579+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: UserController :: disableUser()
+2025-08-06T09:23:10.579+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: disableAndEnableUser()
+2025-08-06T09:23:10.592+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: UserServiceImpl :: disableAndEnableUser() duration: 13ms
+2025-08-06T09:23:10.592+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: UserController :: disableUser() duration: 13ms
+2025-08-06T09:23:14.104+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:23:14.104+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZnVsbCBuYW1lIjoiS2hhbiIsInN1YiI6ImtoYW5AZ21haWwuY29tIiwiaWF0IjoxNzU0NDU0MTIwLCJleHAiOjE3NTQ0NTYyODB9.MGPSZP95Q9QIC0Gc5JlKpDnP7yG-_gWzWgMYb_-_Gn8
+2025-08-06T09:23:14.104+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:23:14.106+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T09:23:14.106+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : username received: khan@gmail.com
+2025-08-06T09:23:14.114+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:23:14.117+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T09:23:14.118+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: UserController :: disableUser()
+2025-08-06T09:23:14.120+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: disableAndEnableUser()
+2025-08-06T09:23:14.132+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: UserServiceImpl :: disableAndEnableUser() duration: 12ms
+2025-08-06T09:23:14.132+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: UserController :: disableUser() duration: 14ms
+2025-08-06T09:24:02.907+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:24:02.907+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZnVsbCBuYW1lIjoiS2hhbiIsInN1YiI6ImtoYW5AZ21haWwuY29tIiwiaWF0IjoxNzU0NDU0MTIwLCJleHAiOjE3NTQ0NTYyODB9.MGPSZP95Q9QIC0Gc5JlKpDnP7yG-_gWzWgMYb_-_Gn8
+2025-08-06T09:24:02.907+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:24:02.909+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 2ms
+2025-08-06T09:24:02.909+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : username received: khan@gmail.com
+2025-08-06T09:24:02.918+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:24:02.920+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T09:24:02.920+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: UserController :: disableUser()
+2025-08-06T09:24:02.922+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: disableAndEnableUser()
+2025-08-06T09:24:02.932+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: UserServiceImpl :: disableAndEnableUser() duration: 10ms
+2025-08-06T09:24:02.934+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: UserController :: disableUser() duration: 14ms
+2025-08-06T09:24:05.492+05:00  INFO 10876 --- [Random-Email-Generator] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-08-06T09:24:05.494+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-23] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T09:24:05.723+05:00  INFO 10876 --- [Random-Email-Generator] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T09:24:05.727+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:24:05.729+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-08-06T09:24:05.735+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2025-08-06T09:24:05.920+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Starting RandomEmailGeneratorApplication using Java 17.0.12 with PID 10876 (F:\Backend\Random-Email-Generator\target\classes started by BK_QA in F:\Backend\Random-Email-Generator)
+2025-08-06T09:24:05.922+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-06T09:24:05.922+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T09:24:06.426+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T09:24:06.467+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2025-08-06T09:24:06.876+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-06T09:24:06.878+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T09:24:06.878+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-06T09:24:06.922+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-06T09:24:06.922+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 998 ms
+2025-08-06T09:24:07.136+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T09:24:07.144+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T09:24:07.164+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T09:24:07.166+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2025-08-06T09:24:07.205+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27830ea2
+2025-08-06T09:24:07.205+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2025-08-06T09:24:07.207+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T09:24:07.207+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T09:24:07.207+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T09:24:07.374+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T09:24:07.423+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:24:07.974+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.config.security.JwtFilter            : Filter 'jwtFilter' configured for use
+2025-08-06T09:24:08.098+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-06T09:24:08.268+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [F:\Backend\Random-Email-Generator\target\classes\com\randomEmailGenerator\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 2: No qualifying bean of type 'com.randomEmailGenerator.services.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-08-06T09:24:08.268+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:24:08.268+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2025-08-06T09:24:08.275+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2025-08-06T09:24:08.275+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-06T09:24:08.284+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-06T09:24:08.303+05:00 ERROR 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.randomEmailGenerator.controller.UserController required a bean of type 'com.randomEmailGenerator.services.UserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.randomEmailGenerator.services.UserService' in your configuration.
+
+2025-08-06T09:24:11.843+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Starting RandomEmailGeneratorApplication using Java 17.0.12 with PID 10876 (F:\Backend\Random-Email-Generator\target\classes started by BK_QA in F:\Backend\Random-Email-Generator)
+2025-08-06T09:24:11.843+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-06T09:24:11.843+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T09:24:12.165+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T09:24:12.186+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2025-08-06T09:24:12.443+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-06T09:24:12.443+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T09:24:12.443+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-06T09:24:12.479+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-08-06T09:24:12.479+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 636 ms
+2025-08-06T09:24:12.568+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T09:24:12.568+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T09:24:12.596+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T09:24:12.598+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2025-08-06T09:24:12.622+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b0e358
+2025-08-06T09:24:12.622+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2025-08-06T09:24:12.622+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T09:24:12.622+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T09:24:12.622+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T09:24:12.734+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T09:24:12.769+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:24:13.102+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.config.security.JwtFilter            : Filter 'jwtFilter' configured for use
+2025-08-06T09:24:13.177+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-06T09:24:13.728+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T09:24:14.814+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T09:24:14.842+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-06T09:24:14.852+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Started RandomEmailGeneratorApplication in 3.045 seconds (process running for 886.361)
+2025-08-06T09:24:14.854+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T09:24:18.612+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-06T09:24:18.612+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-06T09:24:18.614+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-06T09:24:18.615+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:24:18.617+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZnVsbCBuYW1lIjoiS2hhbiIsInN1YiI6ImtoYW5AZ21haWwuY29tIiwiaWF0IjoxNzU0NDU0MTIwLCJleHAiOjE3NTQ0NTYyODB9.MGPSZP95Q9QIC0Gc5JlKpDnP7yG-_gWzWgMYb_-_Gn8
+2025-08-06T09:24:18.617+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:24:23.612+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T09:24:23.612+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T09:24:24.107+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: khan@gmail.com and  now generating token
+2025-08-06T09:24:24.107+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T09:24:24.111+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 4ms
+2025-08-06T09:24:24.113+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 501ms
+2025-08-06T09:24:24.113+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 501ms
+2025-08-06T09:24:43.376+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:24:43.376+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZnVsbCBuYW1lIjoiS2hhbiIsInN1YiI6ImtoYW5AZ21haWwuY29tIiwiaWF0IjoxNzU0NDU0MjY0LCJleHAiOjE3NTQ0NTY0MjR9.xQ3lkQIgwnYUDYB-c4w-TauwK7L2wRqUfPGF96ctNuI
+2025-08-06T09:24:43.376+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:24:43.380+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 4ms
+2025-08-06T09:24:43.380+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : username received: khan@gmail.com
+2025-08-06T09:24:43.439+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:24:43.446+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 7ms
+2025-08-06T09:24:43.449+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: UserController :: disableUser()
+2025-08-06T09:24:43.449+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: disableAndEnableUser()
+2025-08-06T09:24:43.469+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: UserServiceImpl :: disableAndEnableUser() duration: 20ms
+2025-08-06T09:24:43.469+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: UserController :: disableUser() duration: 20ms
+2025-08-06T09:24:49.686+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:24:49.686+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZnVsbCBuYW1lIjoiS2hhbiIsInN1YiI6ImtoYW5AZ21haWwuY29tIiwiaWF0IjoxNzU0NDU0MjY0LCJleHAiOjE3NTQ0NTY0MjR9.xQ3lkQIgwnYUDYB-c4w-TauwK7L2wRqUfPGF96ctNuI
+2025-08-06T09:24:49.686+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:24:49.687+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 1ms
+2025-08-06T09:24:49.687+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.security.JwtFilter            : username received: khan@gmail.com
+2025-08-06T09:24:49.695+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:24:49.697+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T09:24:49.697+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: UserController :: disableUser()
+2025-08-06T09:24:49.697+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: disableAndEnableUser()
+2025-08-06T09:24:49.713+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: UserServiceImpl :: disableAndEnableUser() duration: 16ms
+2025-08-06T09:24:49.713+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: UserController :: disableUser() duration: 16ms
+2025-08-06T09:27:10.101+05:00  INFO 10876 --- [Random-Email-Generator] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-08-06T09:27:10.103+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-30] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T09:27:10.254+05:00  INFO 10876 --- [Random-Email-Generator] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T09:27:10.258+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:27:10.258+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2025-08-06T09:27:10.262+05:00  INFO 10876 --- [Random-Email-Generator] [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2025-08-06T09:27:10.397+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Starting RandomEmailGeneratorApplication using Java 17.0.12 with PID 10876 (F:\Backend\Random-Email-Generator\target\classes started by BK_QA in F:\Backend\Random-Email-Generator)
+2025-08-06T09:27:10.397+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-06T09:27:10.397+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T09:27:10.746+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T09:27:10.768+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2025-08-06T09:27:11.027+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-06T09:27:11.029+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T09:27:11.029+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-06T09:27:11.059+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-08-06T09:27:11.059+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 657 ms
+2025-08-06T09:27:11.179+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T09:27:11.183+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T09:27:11.191+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T09:27:11.193+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2025-08-06T09:27:11.223+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27910093
+2025-08-06T09:27:11.223+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2025-08-06T09:27:11.227+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T09:27:11.227+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T09:27:11.227+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T09:27:11.314+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T09:27:11.354+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:27:11.779+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.config.security.JwtFilter            : Filter 'jwtFilter' configured for use
+2025-08-06T09:27:11.907+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-06T09:27:12.066+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [F:\Backend\Random-Email-Generator\target\classes\com\randomEmailGenerator\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 2: No qualifying bean of type 'com.randomEmailGenerator.services.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-08-06T09:27:12.067+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:27:12.068+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2025-08-06T09:27:12.073+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2025-08-06T09:27:12.074+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-06T09:27:12.092+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-06T09:27:12.104+05:00 ERROR 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.randomEmailGenerator.controller.UserController required a bean of type 'com.randomEmailGenerator.services.UserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.randomEmailGenerator.services.UserService' in your configuration.
+
+2025-08-06T09:27:13.603+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Starting RandomEmailGeneratorApplication using Java 17.0.12 with PID 10876 (F:\Backend\Random-Email-Generator\target\classes started by BK_QA in F:\Backend\Random-Email-Generator)
+2025-08-06T09:27:13.603+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-06T09:27:13.603+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T09:27:13.977+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T09:27:13.999+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2025-08-06T09:27:14.247+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-06T09:27:14.247+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-06T09:27:14.247+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-06T09:27:14.295+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-08-06T09:27:14.295+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 690 ms
+2025-08-06T09:27:14.390+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T09:27:14.390+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T09:27:14.403+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T09:27:14.405+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2025-08-06T09:27:14.425+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57a6a4e3
+2025-08-06T09:27:14.425+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2025-08-06T09:27:14.427+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T09:27:14.427+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T09:27:14.427+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-10)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T09:27:14.516+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-06T09:27:14.543+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:27:14.841+05:00 DEBUG 10876 --- [Random-Email-Generator] [restartedMain] c.r.config.security.JwtFilter            : Filter 'jwtFilter' configured for use
+2025-08-06T09:27:14.909+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-06T09:27:15.075+05:00  WARN 10876 --- [Random-Email-Generator] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T09:27:16.624+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-06T09:27:16.651+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-06T09:27:16.665+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] c.r.RandomEmailGeneratorApplication      : Started RandomEmailGeneratorApplication in 3.113 seconds (process running for 1068.175)
+2025-08-06T09:27:16.669+05:00  INFO 10876 --- [Random-Email-Generator] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-06T09:27:23.557+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-06T09:27:23.557+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-06T09:27:23.559+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-06T09:27:23.630+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T09:27:23.630+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T09:27:25.897+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: khan@gmail.com and  now generating token
+2025-08-06T09:27:25.897+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T09:27:25.900+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 3ms
+2025-08-06T09:27:25.902+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 2272ms
+2025-08-06T09:27:25.904+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-1] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 2274ms
+2025-08-06T09:27:47.170+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:27:47.170+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZnVsbCBuYW1lIjoiS2hhbiIsInN1YiI6ImtoYW5AZ21haWwuY29tIiwiaWF0IjoxNzU0NDU0NDQ1LCJleHAiOjE3NTQ0NTY2MDV9.iG72uW7a88lrTOoj-JLmPkIqE6ZaJXSw8jbBoWqrqr8
+2025-08-06T09:27:47.170+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:27:47.173+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 3ms
+2025-08-06T09:27:47.173+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.security.JwtFilter            : username received: khan@gmail.com
+2025-08-06T09:27:47.225+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:27:47.225+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 0ms
+2025-08-06T09:27:47.239+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: UserController :: disableUser()
+2025-08-06T09:27:47.239+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: disableAndEnableUser()
+2025-08-06T09:27:47.289+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: UserServiceImpl :: disableAndEnableUser() duration: 50ms
+2025-08-06T09:27:47.289+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-4] c.r.config.AspectForLogging              : End :: UserController :: disableUser() duration: 50ms
+2025-08-06T09:27:51.939+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:27:51.939+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZnVsbCBuYW1lIjoiS2hhbiIsInN1YiI6ImtoYW5AZ21haWwuY29tIiwiaWF0IjoxNzU0NDU0NDQ1LCJleHAiOjE3NTQ0NTY2MDV9.iG72uW7a88lrTOoj-JLmPkIqE6ZaJXSw8jbBoWqrqr8
+2025-08-06T09:27:51.939+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:27:51.939+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T09:27:51.939+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.security.JwtFilter            : username received: khan@gmail.com
+2025-08-06T09:27:51.953+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:27:51.955+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T09:27:51.955+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: UserController :: disableUser()
+2025-08-06T09:27:51.955+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: disableAndEnableUser()
+2025-08-06T09:27:51.986+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: UserServiceImpl :: disableAndEnableUser() duration: 31ms
+2025-08-06T09:27:51.986+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-2] c.r.config.AspectForLogging              : End :: UserController :: disableUser() duration: 31ms
+2025-08-06T09:27:54.456+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:27:54.456+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZnVsbCBuYW1lIjoiS2hhbiIsInN1YiI6ImtoYW5AZ21haWwuY29tIiwiaWF0IjoxNzU0NDU0NDQ1LCJleHAiOjE3NTQ0NTY2MDV9.iG72uW7a88lrTOoj-JLmPkIqE6ZaJXSw8jbBoWqrqr8
+2025-08-06T09:27:54.456+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:27:54.459+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 3ms
+2025-08-06T09:27:54.459+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.security.JwtFilter            : username received: khan@gmail.com
+2025-08-06T09:27:54.471+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:27:54.472+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 1ms
+2025-08-06T09:27:54.474+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: UserController :: disableUser()
+2025-08-06T09:27:54.474+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: disableAndEnableUser()
+2025-08-06T09:27:54.505+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: UserServiceImpl :: disableAndEnableUser() duration: 31ms
+2025-08-06T09:27:54.505+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-6] c.r.config.AspectForLogging              : End :: UserController :: disableUser() duration: 31ms
+2025-08-06T09:28:13.657+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthController :: loginUser()
+2025-08-06T09:28:13.657+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: AuthServiceImpl :: loginUser()
+2025-08-06T09:28:13.850+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.services.Impl.AuthServiceImpl        : User is authenticate with email: bilalkhan@gmail.com and  now generating token
+2025-08-06T09:28:13.850+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: generateToken()
+2025-08-06T09:28:13.850+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: generateToken() duration: 0ms
+2025-08-06T09:28:13.850+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: AuthServiceImpl :: loginUser() duration: 193ms
+2025-08-06T09:28:13.850+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-5] c.r.config.AspectForLogging              : End :: AuthController :: loginUser() duration: 193ms
+2025-08-06T09:28:18.560+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:28:18.560+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZnVsbCBuYW1lIjoiS2hhbiIsInN1YiI6ImtoYW5AZ21haWwuY29tIiwiaWF0IjoxNzU0NDU0NDQ1LCJleHAiOjE3NTQ0NTY2MDV9.iG72uW7a88lrTOoj-JLmPkIqE6ZaJXSw8jbBoWqrqr8
+2025-08-06T09:28:18.560+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:28:18.561+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 1ms
+2025-08-06T09:28:18.561+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.security.JwtFilter            : username received: khan@gmail.com
+2025-08-06T09:28:18.571+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:28:18.573+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 2ms
+2025-08-06T09:28:18.574+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: UserController :: userDetailsById()
+2025-08-06T09:28:18.576+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: getUserDetailById()
+2025-08-06T09:28:18.585+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: UserServiceImpl :: getUserDetailById() duration: 9ms
+2025-08-06T09:28:18.585+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-7] c.r.config.AspectForLogging              : End :: UserController :: userDetailsById() duration: 11ms
+2025-08-06T09:28:54.456+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:28:54.456+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0NTQ0OTMsImV4cCI6MTc1NDQ1NjY1M30.VssiL1UAQlCSEuPRjdOEm8a8pXfIkm6tlpnOPVO5pY4
+2025-08-06T09:28:54.456+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:28:54.459+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 3ms
+2025-08-06T09:28:54.460+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T09:28:54.468+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:28:54.468+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 0ms
+2025-08-06T09:28:54.468+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: UserController :: getAllUser()
+2025-08-06T09:28:54.468+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: getAllUsers()
+2025-08-06T09:28:54.494+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: UserServiceImpl :: getAllUsers() duration: 26ms
+2025-08-06T09:28:54.494+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-8] c.r.config.AspectForLogging              : End :: UserController :: getAllUser() duration: 26ms
+2025-08-06T09:29:47.276+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:29:47.277+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0NTQ0OTMsImV4cCI6MTc1NDQ1NjY1M30.VssiL1UAQlCSEuPRjdOEm8a8pXfIkm6tlpnOPVO5pY4
+2025-08-06T09:29:47.277+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:29:47.278+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 1ms
+2025-08-06T09:29:47.278+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T09:29:47.287+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:29:47.290+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T09:29:47.291+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: UserController :: deleteUser()
+2025-08-06T09:29:47.291+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: deleteUser()
+2025-08-06T09:29:47.344+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: UserServiceImpl :: deleteUser() duration: 53ms
+2025-08-06T09:29:47.344+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-9] c.r.config.AspectForLogging              : End :: UserController :: deleteUser() duration: 53ms
+2025-08-06T09:29:50.062+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:29:50.062+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0NTQ0OTMsImV4cCI6MTc1NDQ1NjY1M30.VssiL1UAQlCSEuPRjdOEm8a8pXfIkm6tlpnOPVO5pY4
+2025-08-06T09:29:50.062+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:29:50.063+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 1ms
+2025-08-06T09:29:50.063+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T09:29:50.072+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:29:50.073+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 1ms
+2025-08-06T09:29:50.075+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: UserController :: deleteUser()
+2025-08-06T09:29:50.075+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-10] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: deleteUser()
+2025-08-06T09:29:50.085+05:00  WARN 10876 --- [Random-Email-Generator] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.randomEmailGenerator.exception.ResourceNotFoundException: User not found with id: 5]
+2025-08-06T09:29:55.675+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : BEARER_HEADER received
+2025-08-06T09:29:55.675+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : Token received : eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZnVsbCBuYW1lIjoiQmlsYWwgS2hhbiIsInN1YiI6ImJpbGFsa2hhbkBnbWFpbC5jb20iLCJpYXQiOjE3NTQ0NTQ0OTMsImV4cCI6MTc1NDQ1NjY1M30.VssiL1UAQlCSEuPRjdOEm8a8pXfIkm6tlpnOPVO5pY4
+2025-08-06T09:29:55.677+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: extractUsername()
+2025-08-06T09:29:55.677+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: extractUsername() duration: 0ms
+2025-08-06T09:29:55.678+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.security.JwtFilter            : username received: bilalkhan@gmail.com
+2025-08-06T09:29:55.684+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: JwtServiceImpl :: validateToken()
+2025-08-06T09:29:55.687+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: JwtServiceImpl :: validateToken() duration: 3ms
+2025-08-06T09:29:55.690+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: UserController :: getAllUser()
+2025-08-06T09:29:55.690+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : Calling :: UserServiceImpl :: getAllUsers()
+2025-08-06T09:29:55.714+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: UserServiceImpl :: getAllUsers() duration: 24ms
+2025-08-06T09:29:55.714+05:00  INFO 10876 --- [Random-Email-Generator] [http-nio-8081-exec-3] c.r.config.AspectForLogging              : End :: UserController :: getAllUser() duration: 24ms
+2025-08-06T09:30:18.803+05:00  INFO 10876 --- [Random-Email-Generator] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-06T09:30:19.137+05:00  INFO 10876 --- [Random-Email-Generator] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-06T09:30:19.142+05:00  INFO 10876 --- [Random-Email-Generator] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:30:19.144+05:00  INFO 10876 --- [Random-Email-Generator] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2025-08-06T09:30:19.149+05:00  INFO 10876 --- [Random-Email-Generator] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.

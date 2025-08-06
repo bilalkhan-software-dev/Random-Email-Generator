@@ -32,29 +32,17 @@ public class UserServiceImpl implements UserService {
                 () -> new ResourceNotFoundException("User not found with id: " + userId)
         );
 
-        UserResponse response;
+        // Toggle the enabled status
+        user.setIsEnabled(!user.getIsEnabled());
+        User updatedUser = userRepository.save(user);
 
-        if (user.getIsEnabled()) {
-            response = UserResponse.builder()
-                    .userId(user.getId())
-                    .fullName(user.getFullName())
-                    .username(user.getUsername())
-                    .isEnabled(true)
-                    .totalSavedEmails(user.getGeneratedEmail().size())
-                    .build();
-        }
-
-        user.setIsEnabled(false);
-        User isEnabled = userRepository.save(user);
-        response = UserResponse.builder()
-                .userId(isEnabled.getId())
-                .fullName(isEnabled.getFullName())
-                .username(isEnabled.getUsername())
-                .isEnabled(false)
-                .totalSavedEmails(isEnabled.getGeneratedEmail().size())
+        return UserResponse.builder()
+                .userId(updatedUser.getId())
+                .fullName(updatedUser.getFullName())
+                .username(updatedUser.getUsername())
+                .isEnabled(updatedUser.getIsEnabled())
+                .totalSavedEmails(updatedUser.getGeneratedEmail().size())
                 .build();
-
-        return response;
     }
 
     @Override

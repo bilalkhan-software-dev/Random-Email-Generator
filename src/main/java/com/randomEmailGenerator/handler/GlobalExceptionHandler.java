@@ -53,7 +53,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(DisabledException.class)
     public ResponseEntity<?> disabledExceptionHandler(DisabledException exception) {
-        return responseHandler.createErrorResponseMessage("Your account is disabled", HttpStatus.FORBIDDEN);
+        return responseHandler.createErrorResponseMessage("Your account has been disabled", HttpStatus.FORBIDDEN);
     }
 
     @ExceptionHandler(JwtTokenExpiredException.class)
