@@ -3,9 +3,11 @@ package com.randomEmailGenerator.controller;
 import com.randomEmailGenerator.dto.AuthResponse;
 import com.randomEmailGenerator.dto.EmailResponse;
 import com.randomEmailGenerator.dto.GenerateEmailResponse;
+import com.randomEmailGenerator.dto.UserResponse;
 import com.randomEmailGenerator.handler.GenericResponseHandler;
 import com.randomEmailGenerator.services.AuthService;
 import com.randomEmailGenerator.services.GeneratingEmailService;
+import com.randomEmailGenerator.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +25,7 @@ public class UserController {
 
     private final GeneratingEmailService generatingEmailService;
     private final AuthService authService;
+    private final UserService userService;
     private final GenericResponseHandler responseHandler;
 
     @PostMapping("/save-email/{email}")
@@ -66,4 +69,38 @@ public class UserController {
         }
         return responseHandler.createErrorResponseMessage("User not retrieved successfully!", HttpStatus.BAD_REQUEST);
     }
+
+    @GetMapping("/{userId}")
+    public ResponseEntity<?> userDetailsById(@PathVariable Integer userId) {
+
+        UserResponse userDetailById = userService.getUserDetailById(userId);
+        if (ObjectUtils.isEmpty(userDetailById)) {
+            return responseHandler.createErrorResponseMessage("User detail retrieve failed!", HttpStatus.BAD_REQUEST);
+        }
+        return responseHandler.createBuildResponse("User detail retrieved successfully!", userDetailById, HttpStatus.OK);
+    }
+
+    @GetMapping("/")
+    public ResponseEntity<?> getAllUser() {
+
+        List<UserResponse> allUsers = userService.getAllUsers();
+        if (CollectionUtils.isEmpty(allUsers)) {
+            return responseHandler.createErrorResponseMessage("No user register yet!", HttpStatus.BAD_REQUEST);
+        }
+        return responseHandler.createBuildResponse("Total users: " + allUsers.size(), allUsers, HttpStatus.OK);
+    }
+
+    @DeleteMapping("/delete/{userId}")
+    public ResponseEntity<?> deleteUser(@PathVariable Integer userId) {
+        userService.deleteUser(userId);
+        return responseHandler.createBuildResponseMessage("User deleted successfully with id: " + userId, HttpStatus.OK);
+    }
+
+    @PutMapping("/disable/userId")
+    public ResponseEntity<?> disableUser(@PathVariable Integer userId) {
+        UserResponse response = userService.disableAndEnableUser(userId);
+        String message = response.getIsEnabled() ? "User is enabled successfully!" : "User is disabled successfully!";
+        return responseHandler.createBuildResponse(message, response, HttpStatus.OK);
+    }
+
 }

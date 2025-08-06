@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -49,14 +50,22 @@ public class GlobalExceptionHandler {
     public ResponseEntity<?> badCredentialsExceptionHandler(BadCredentialsException exception) {
         return responseHandler.createErrorResponseMessage("Password is wrong!", HttpStatus.UNAUTHORIZED);
     }
+
+    @ExceptionHandler(DisabledException.class)
+    public ResponseEntity<?> disabledExceptionHandler(DisabledException exception) {
+        return responseHandler.createErrorResponseMessage("Your account is disabled", HttpStatus.FORBIDDEN);
+    }
+
     @ExceptionHandler(JwtTokenExpiredException.class)
     public ResponseEntity<?> jwtExceptionHandler(JwtTokenExpiredException exception) {
         return responseHandler.createErrorResponseMessage(exception.getMessage(), HttpStatus.UNAUTHORIZED);
     }
+
     @ExceptionHandler(AccessDeniedException.class)
     public ResponseEntity<?> accessDeniedException(AccessDeniedException e) {
         return responseHandler.createErrorResponseMessage("You do not have permission to perform this action.", HttpStatus.FORBIDDEN);
     }
+
     @ExceptionHandler(HttpMessageNotReadableException.class)
     public ResponseEntity<?> httpMessageNotReadableException(HttpMessageNotReadableException e) {
         return responseHandler.createErrorResponseMessage("Malformed JSON request", HttpStatus.BAD_REQUEST);

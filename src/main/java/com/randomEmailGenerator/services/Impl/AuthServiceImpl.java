@@ -13,6 +13,7 @@ import com.randomEmailGenerator.util.GetLoggedInUserDetails;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 
@@ -70,9 +71,12 @@ public class AuthServiceImpl implements AuthService {
         String username = loginRequest.getUsername();
         String password = loginRequest.getPassword();
 
-        userRepository.findByUsername(username).orElseThrow(
+        User user = userRepository.findByUsername(username).orElseThrow(
                 () -> new UsernameNotFoundException("No account is registered with this username!")
         );
+        if (!user.getIsEnabled()) {
+            throw new DisabledException("Your account is disabled");
+        }
 
 
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
