@@ -4,9 +4,12 @@ import com.randomEmailGenerator.dto.UserResponse;
 import com.randomEmailGenerator.entity.GeneratedEmail;
 import com.randomEmailGenerator.entity.User;
 import com.randomEmailGenerator.exception.ResourceNotFoundException;
-import com.randomEmailGenerator.repository.GeneratedEmailRepository;
 import com.randomEmailGenerator.repository.UserRepository;
 import com.randomEmailGenerator.services.UserService;
+import com.randomEmailGenerator.util.GetLoggedInUserDetails;
+
+import static com.randomEmailGenerator.util.Constants.ADMIN;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +20,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
-    private final GeneratedEmailRepository generatedEmailRepository;
+    private final GetLoggedInUserDetails loggedInUserDetails;
 
     @Override
     public void deleteUser(Integer userId) {
@@ -31,12 +34,16 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserResponse disableAndEnableUser(Integer userId) {
+
+        User authenticatedUser = loggedInUserDetails.getAuthenticatedUser();
+
+
         User user = userRepository.findById(userId).orElseThrow(
                 () -> new ResourceNotFoundException("User not found with id: " + userId)
         );
 
-        if (!user.getUsername().equalsIgnoreCase("bilalkhan.devse@gmail.com")) {
-            throw new IllegalArgumentException("Only father can enable/disable user");
+        if (!authenticatedUser.getUsername().equalsIgnoreCase(ADMIN)) {
+            throw new IllegalArgumentException("Only father can enable or disable user");
         }
 
 
