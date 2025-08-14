@@ -2,12 +2,19 @@ package com.randomEmailGenerator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class RandomEmailGeneratorApplication {
+public class RandomEmailGeneratorApplication extends SpringBootServletInitializer {
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(RandomEmailGeneratorApplication.class, args);
 	}
 
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+		return builder.sources(RandomEmailGeneratorApplication.class);
+	}
 }

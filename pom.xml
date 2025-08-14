@@ -8,6 +8,7 @@
         <version>3.5.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <packaging>war</packaging>
     <groupId>com.randomEmailGenerator</groupId>
     <artifactId>Random-Email-Generator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -28,6 +29,7 @@
     </scm>
     <properties>
         <java.version>17</java.version>
+
     </properties>
     <dependencies>
         <dependency>
@@ -95,9 +97,17 @@
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>
+        <!-- Change war file name to artifact ID -->
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
