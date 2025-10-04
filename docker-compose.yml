@@ -1,0 +1,33 @@
+#version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: email-generator-db
+    environment:
+      POSTGRES_DB: random_email_generator
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: khan
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  random-email-generator:
+    image: bilalkhandevse/random-email-generator:latest
+    container_name: random-email-app
+    environment:
+      - DB_URL=jdbc:postgresql://postgres:5432/random_email_generator
+      - DB_USER=postgres
+      - DB_PASSWORD=khan
+      - FRONTEND_URL=https://random-email-generator.vercel.app
+      - SERVER_PORT=8080
+    ports:
+      - "8081:8080"
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
